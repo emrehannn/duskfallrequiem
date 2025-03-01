@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: ec9be0fe153ba1c42ba019a1dbf444cc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202273
+  packageName: Simple Spin Blur
+  packageVersion: 1.0
+  assetPath: Assets/Simple Spin Blur/Scripts/CanvasControls.cs
+  uploadId: 459916

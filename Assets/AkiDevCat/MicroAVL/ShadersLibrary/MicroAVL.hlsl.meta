@@ -1,0 +1,10 @@
+﻿fileFormatVersion: 2
+guid: b46bb4e8a18e417088abdd8cb397cdeb
+timeCreated: 1709824190
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266587
+  packageName: MicroAVL [URP] - Volumetric Lights
+  packageVersion: 1.0
+  assetPath: Assets/AkiDevCat/MicroAVL/ShadersLibrary/MicroAVL.hlsl
+  uploadId: 678285

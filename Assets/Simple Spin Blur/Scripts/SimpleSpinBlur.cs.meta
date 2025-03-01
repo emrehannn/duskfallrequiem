@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 65b6ac4120612984a932f0efdccd1098
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202273
+  packageName: Simple Spin Blur
+  packageVersion: 1.0
+  assetPath: Assets/Simple Spin Blur/Scripts/SimpleSpinBlur.cs
+  uploadId: 459916

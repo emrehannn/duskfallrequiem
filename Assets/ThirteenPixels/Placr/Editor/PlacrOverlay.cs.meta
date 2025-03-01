@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a7eec42b9814d1045af8b7f50d768790
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202664
+  packageName: Placr
+  packageVersion: 1.1.1
+  assetPath: Assets/ThirteenPixels/Placr/Editor/PlacrOverlay.cs
+  uploadId: 564250

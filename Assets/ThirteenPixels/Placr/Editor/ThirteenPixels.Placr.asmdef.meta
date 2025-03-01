@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2022e5ca8aaecc94d985671ae5ee9aa7
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202664
+  packageName: Placr
+  packageVersion: 1.1.1
+  assetPath: Assets/ThirteenPixels/Placr/Editor/ThirteenPixels.Placr.asmdef
+  uploadId: 564250

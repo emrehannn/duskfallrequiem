@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: fab61997043097f47830262f4ed9e493
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266587
+  packageName: MicroAVL [URP] - Volumetric Lights
+  packageVersion: 1.0
+  assetPath: Assets/AkiDevCat/MicroAVL/Editor/MicroAVLShaderGUI.cs
+  uploadId: 678285

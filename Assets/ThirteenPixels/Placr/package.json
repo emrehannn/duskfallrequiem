@@ -1,0 +1,15 @@
+{
+  "name": "de.thirteenpixels.placr",
+  "version": "1.1.2",
+  "displayName": "Placr",
+  "description": "Allows for more fluent scene editing when hand-placing objects.",
+  "unity": "2020.2",
+  "keywords": [
+    "Scene Editing"
+  ],
+  "author": {
+    "name": "13Pixels",
+    "email": "assetstore@13pixels.de",
+    "url": "https://www.13pixels.de"
+  } 
+}

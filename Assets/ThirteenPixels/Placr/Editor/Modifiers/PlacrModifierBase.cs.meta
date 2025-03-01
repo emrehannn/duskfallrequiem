@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0d9d4b5759ba1e848a378fb4ac707e70
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202664
+  packageName: Placr
+  packageVersion: 1.1.1
+  assetPath: Assets/ThirteenPixels/Placr/Editor/Modifiers/PlacrModifierBase.cs
+  uploadId: 564250

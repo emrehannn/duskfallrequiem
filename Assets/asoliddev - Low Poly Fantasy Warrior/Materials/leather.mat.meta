@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 017e81f8bd6f5994badfeaa2e70a9646
+timeCreated: 1526138474
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 127775
+  packageName: Low Poly Fantasy Warrior
+  packageVersion: 1.0
+  assetPath: Assets/asoliddev - Low Poly Fantasy Warrior/Materials/leather.mat
+  uploadId: 267882

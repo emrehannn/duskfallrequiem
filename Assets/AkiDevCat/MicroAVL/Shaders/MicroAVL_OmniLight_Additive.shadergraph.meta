@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: af598b2e4844d2a45810cbcbeb77f650
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266587
+  packageName: MicroAVL [URP] - Volumetric Lights
+  packageVersion: 1.0
+  assetPath: Assets/AkiDevCat/MicroAVL/Shaders/MicroAVL_OmniLight_Additive.shadergraph
+  uploadId: 678285

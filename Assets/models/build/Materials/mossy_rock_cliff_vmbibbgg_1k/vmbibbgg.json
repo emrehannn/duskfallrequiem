@@ -1,0 +1,578 @@
+{
+  "assetCategories": {
+    "surface": {
+      "moss": {
+        "rock": {}
+      },
+      "rock": {
+        "mossy": {}
+      }
+    }
+  },
+  "averageColor": "#000000",
+  "categories": [
+    "surface",
+    "rock",
+    "cliff"
+  ],
+  "comp_version": 1,
+  "description": "",
+  "displacementBias": 0.457659,
+  "displacementCalibrationAccuracy": 0.935228,
+  "displacementScale": 47.262138,
+  "environment": {
+    "biome": "undefined",
+    "region": "Europe"
+  },
+  "highest_available_res": 8192,
+  "id": "vmbibbgg",
+  "json": {
+    "contentLength": 12281,
+    "uri": "vmbibbgg.json"
+  },
+  "maps": [
+    {
+      "averageColor": "#CDCDCD",
+      "bitDepth": 32,
+      "colorSpace": "sRGB",
+      "contentLength": 108826178,
+      "maxIntensity": 255,
+      "mimeType": "image/x-exr",
+      "minIntensity": 95,
+      "name": "AO",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "ao",
+      "uri": "vmbibbgg_8K_AO.exr"
+    },
+    {
+      "averageColor": "#CDCDCD",
+      "bitDepth": 8,
+      "colorSpace": "sRGB",
+      "contentLength": 32770926,
+      "maxIntensity": 255,
+      "mimeType": "image/jpeg",
+      "minIntensity": 95,
+      "name": "AO",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "ao",
+      "uri": "vmbibbgg_8K_AO.jpg"
+    },
+    {
+      "averageColor": "#5F625C",
+      "bitDepth": 16,
+      "colorSpace": "sRGB",
+      "contentLength": 164977238,
+      "maxIntensity": 174,
+      "mimeType": "image/x-exr",
+      "minIntensity": 0,
+      "name": "Basecolor",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "basecolor",
+      "uri": "vmbibbgg_8K_Basecolor.exr"
+    },
+    {
+      "averageColor": "#5F625C",
+      "bitDepth": 8,
+      "colorSpace": "sRGB",
+      "contentLength": 68252298,
+      "maxIntensity": 174,
+      "mimeType": "image/jpeg",
+      "minIntensity": 0,
+      "name": "Basecolor",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "basecolor",
+      "uri": "vmbibbgg_8K_Basecolor.jpg"
+    },
+    {
+      "averageColor": "#808080",
+      "bitDepth": 32,
+      "colorSpace": "Linear",
+      "contentLength": 204573627,
+      "maxIntensity": 255,
+      "mimeType": "image/x-exr",
+      "minIntensity": 0,
+      "name": "Bump",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "bump",
+      "uri": "vmbibbgg_8K_Bump.exr"
+    },
+    {
+      "averageColor": "#808080",
+      "bitDepth": 8,
+      "colorSpace": "Linear",
+      "contentLength": 19338973,
+      "maxIntensity": 255,
+      "mimeType": "image/jpeg",
+      "minIntensity": 0,
+      "name": "Bump",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "bump",
+      "uri": "vmbibbgg_8K_Bump.jpg"
+    },
+    {
+      "averageColor": "#FFFFFF",
+      "bitDepth": 32,
+      "colorSpace": "sRGB",
+      "contentLength": 214447576,
+      "maxIntensity": 255,
+      "mimeType": "image/x-exr",
+      "minIntensity": 255,
+      "name": "Cavity",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "cavity",
+      "uri": "vmbibbgg_8K_Cavity.exr"
+    },
+    {
+      "averageColor": "#FFFFFF",
+      "bitDepth": 8,
+      "colorSpace": "sRGB",
+      "contentLength": 57976044,
+      "maxIntensity": 255,
+      "mimeType": "image/jpeg",
+      "minIntensity": 255,
+      "name": "Cavity",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "cavity",
+      "uri": "vmbibbgg_8K_Cavity.jpg"
+    },
+    {
+      "averageColor": "#818181",
+      "bitDepth": 32,
+      "colorSpace": "Linear",
+      "contentLength": 265009451,
+      "maxIntensity": 161,
+      "mimeType": "image/x-exr",
+      "minIntensity": 98,
+      "name": "Displacement",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "displacement",
+      "uri": "vmbibbgg_8K_Displacement.exr"
+    },
+    {
+      "averageColor": "#818181",
+      "bitDepth": 8,
+      "colorSpace": "Linear",
+      "contentLength": 4912336,
+      "maxIntensity": 161,
+      "mimeType": "image/jpeg",
+      "minIntensity": 98,
+      "name": "Displacement",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "displacement",
+      "uri": "vmbibbgg_8K_Displacement.jpg"
+    },
+    {
+      "averageColor": "#131313",
+      "bitDepth": 32,
+      "colorSpace": "Linear",
+      "contentLength": 236804102,
+      "maxIntensity": 36,
+      "mimeType": "image/x-exr",
+      "minIntensity": 1,
+      "name": "Gloss",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "gloss",
+      "uri": "vmbibbgg_8K_Gloss.exr"
+    },
+    {
+      "averageColor": "#131313",
+      "bitDepth": 8,
+      "colorSpace": "Linear",
+      "contentLength": 31050145,
+      "maxIntensity": 36,
+      "mimeType": "image/jpeg",
+      "minIntensity": 1,
+      "name": "Gloss",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "gloss",
+      "uri": "vmbibbgg_8K_Gloss.jpg"
+    },
+    {
+      "averageColor": "#7F7FF3",
+      "bitDepth": 16,
+      "colorSpace": "Linear",
+      "contentLength": 152936775,
+      "maxIntensity": 206,
+      "mimeType": "image/x-exr",
+      "minIntensity": 69,
+      "name": "Normal",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "normal",
+      "uri": "vmbibbgg_8K_Normal.exr"
+    },
+    {
+      "averageColor": "#7F7FF3",
+      "bitDepth": 8,
+      "colorSpace": "Linear",
+      "contentLength": 112424504,
+      "maxIntensity": 206,
+      "mimeType": "image/jpeg",
+      "minIntensity": 69,
+      "name": "Normal",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "normal",
+      "uri": "vmbibbgg_8K_Normal.jpg"
+    },
+    {
+      "averageColor": "#ECECEC",
+      "bitDepth": 32,
+      "colorSpace": "Linear",
+      "contentLength": 207514596,
+      "maxIntensity": 254,
+      "mimeType": "image/x-exr",
+      "minIntensity": 219,
+      "name": "Roughness",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "roughness",
+      "uri": "vmbibbgg_8K_Roughness.exr"
+    },
+    {
+      "averageColor": "#ECECEC",
+      "bitDepth": 8,
+      "colorSpace": "Linear",
+      "contentLength": 30108537,
+      "maxIntensity": 254,
+      "mimeType": "image/jpeg",
+      "minIntensity": 219,
+      "name": "Roughness",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "roughness",
+      "uri": "vmbibbgg_8K_Roughness.jpg"
+    },
+    {
+      "averageColor": "#383838",
+      "bitDepth": 16,
+      "colorSpace": "sRGB",
+      "contentLength": 263342918,
+      "maxIntensity": 56,
+      "mimeType": "image/x-exr",
+      "minIntensity": 56,
+      "name": "Specular",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "specular",
+      "uri": "vmbibbgg_8K_Specular.exr"
+    },
+    {
+      "averageColor": "#383838",
+      "bitDepth": 8,
+      "colorSpace": "sRGB",
+      "contentLength": 40498259,
+      "maxIntensity": 56,
+      "mimeType": "image/jpeg",
+      "minIntensity": 56,
+      "name": "Specular",
+      "physicalSize": "10x10",
+      "resolution": "8192x8192",
+      "type": "specular",
+      "uri": "vmbibbgg_8K_Specular.jpg"
+    }
+  ],
+  "meta": [
+    {
+      "key": "scanArea",
+      "name": "Scan Area",
+      "value": "10x10 m"
+    },
+    {
+      "key": "height",
+      "name": "Height",
+      "value": "0.049 m"
+    },
+    {
+      "key": "tileable",
+      "name": "Tileable",
+      "value": true
+    },
+    {
+      "key": "tiling_directions",
+      "name": "Tiling Directions",
+      "value": [
+        "x",
+        "y"
+      ]
+    },
+    {
+      "key": "texelDensity",
+      "name": "Texel Density",
+      "value": "819 px/m"
+    },
+    {
+      "key": "calibration",
+      "name": "Calibration",
+      "value": "GretagMacbeth ColorChecker Color Rendition Chart"
+    },
+    {
+      "key": "scanner",
+      "name": "Scanner",
+      "value": "MKX"
+    }
+  ],
+  "models": [],
+  "name": "Mossy Rock Cliff",
+  "pack": null,
+  "physicalSize": null,
+  "points": 2,
+  "previews": {
+    "images": [
+      {
+        "contentLength": 274217,
+        "resolution": "360x360",
+        "tags": [
+          "thumb"
+        ],
+        "uri": "vmbibbgg_Grid_360.png"
+      },
+      {
+        "contentLength": 372528,
+        "resolution": "420x420",
+        "tags": [
+          "thumb"
+        ],
+        "uri": "vmbibbgg_Grid_420.png"
+      },
+      {
+        "contentLength": 1091719,
+        "resolution": "720x720",
+        "tags": [
+          "thumb",
+          "retina"
+        ],
+        "uri": "vmbibbgg_Grid_720.png"
+      },
+      {
+        "contentLength": 1484878,
+        "resolution": "840x840",
+        "tags": [
+          "thumb",
+          "retina"
+        ],
+        "uri": "vmbibbgg_Grid_840.png"
+      },
+      {
+        "contentLength": 3098652,
+        "resolution": "1440x768",
+        "tags": [
+          "preview",
+          "clay"
+        ],
+        "uri": "vmbibbgg_PopupClay_1440.png"
+      },
+      {
+        "contentLength": 5823411,
+        "resolution": "1920x1080",
+        "tags": [
+          "preview",
+          "clay"
+        ],
+        "uri": "vmbibbgg_PopupClay_1920.png"
+      },
+      {
+        "contentLength": 12568833,
+        "resolution": "2880x1536",
+        "tags": [
+          "preview",
+          "clay",
+          "retina"
+        ],
+        "uri": "vmbibbgg_PopupClay_2880.png"
+      },
+      {
+        "contentLength": 23815412,
+        "resolution": "3840x2160",
+        "tags": [
+          "preview",
+          "clay",
+          "retina"
+        ],
+        "uri": "vmbibbgg_PopupClay_3840.png"
+      },
+      {
+        "contentLength": 3455875,
+        "resolution": "1440x768",
+        "tags": [
+          "preview",
+          "tiled"
+        ],
+        "uri": "vmbibbgg_PopupTiled_1440.png"
+      },
+      {
+        "contentLength": 6478888,
+        "resolution": "1920x1080",
+        "tags": [
+          "preview",
+          "tiled"
+        ],
+        "uri": "vmbibbgg_PopupTiled_1920.png"
+      },
+      {
+        "contentLength": 13812026,
+        "resolution": "2880x1536",
+        "tags": [
+          "preview",
+          "tiled",
+          "retina"
+        ],
+        "uri": "vmbibbgg_PopupTiled_2880.png"
+      },
+      {
+        "contentLength": 25698047,
+        "resolution": "3840x2160",
+        "tags": [
+          "preview",
+          "tiled",
+          "retina"
+        ],
+        "uri": "vmbibbgg_PopupTiled_3840.png"
+      },
+      {
+        "contentLength": 3453460,
+        "resolution": "1440x768",
+        "tags": [
+          "preview"
+        ],
+        "uri": "vmbibbgg_Popup_1440.png"
+      },
+      {
+        "contentLength": 6479244,
+        "resolution": "1920x1080",
+        "tags": [
+          "preview"
+        ],
+        "uri": "vmbibbgg_Popup_1920.png"
+      },
+      {
+        "contentLength": 13828686,
+        "resolution": "2880x1536",
+        "tags": [
+          "preview",
+          "retina"
+        ],
+        "uri": "vmbibbgg_Popup_2880.png"
+      },
+      {
+        "contentLength": 25272259,
+        "resolution": "3840x2160",
+        "tags": [
+          "preview",
+          "retina"
+        ],
+        "uri": "vmbibbgg_Popup_3840.png"
+      }
+    ],
+    "relativeSize": "1x1",
+    "scaleReferences": []
+  },
+  "process_date": "2024-04-16 21:04:35",
+  "properties": [],
+  "referencePreviews": {
+    "maps": [],
+    "models": []
+  },
+  "references": [],
+  "revised": false,
+  "revision": 0,
+  "semanticTags": {
+    "asset_type": "surface",
+    "color": [
+      "Gray",
+      "Green"
+    ],
+    "contains": [
+      "rock",
+      "moss"
+    ],
+    "descriptive": [
+      "mossy",
+      "rough"
+    ],
+    "environment": [
+      "forest biome"
+    ],
+    "industry": [
+      "archviz",
+      "games",
+      "VFX"
+    ],
+    "interior_exterior": [
+      "exterior"
+    ],
+    "locations": {
+      "Europe": {}
+    },
+    "maxSize": 10,
+    "minSize": 10,
+    "name": "Mossy Rock Cliff",
+    "region": "Europe",
+    "state": [
+      "old"
+    ],
+    "subject_matter": "nature",
+    "theme": [
+      "outdoors",
+      "mountains",
+      "cliffs",
+      "nature",
+      "forests",
+      "RDT"
+    ]
+  },
+  "tags": [
+    "rdt",
+    "rock",
+    "moss"
+  ],
+  "texelDensity": 819,
+  "texture_type": "basic",
+  "ue_plugin_archives": [
+    {
+      "contentLength": 376587799,
+      "gltfVersion": "2.0",
+      "tier": 0,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_0/vmbibbgg_tier_0.zip",
+      "version": 1
+    },
+    {
+      "contentLength": 117870294,
+      "gltfVersion": "2.0",
+      "tier": 1,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_1/vmbibbgg_tier_1.zip",
+      "version": 1
+    },
+    {
+      "contentLength": 30165552,
+      "gltfVersion": "2.0",
+      "tier": 2,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_2/vmbibbgg_tier_2.zip",
+      "version": 1
+    },
+    {
+      "contentLength": 2855929,
+      "gltfVersion": "2.0",
+      "tier": 3,
+      "type": "gltf",
+      "uri": "ue_plugin_archives/tier_3/vmbibbgg_tier_3.zip",
+      "version": 1
+    }
+  ],
+  "version": 2
+}

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 82d86b1d4b91c8e4f82b2c5fa76ca368
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202664
+  packageName: Placr
+  packageVersion: 1.1.1
+  assetPath: Assets/ThirteenPixels/Placr/Editor/Modifiers/PlacrModifierRandomTilt.cs
+  uploadId: 564250

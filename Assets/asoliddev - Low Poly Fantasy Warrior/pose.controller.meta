@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 47f29fac49912c84b964c579169fe933
+timeCreated: 1536056820
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 127775
+  packageName: Low Poly Fantasy Warrior
+  packageVersion: 1.0
+  assetPath: Assets/asoliddev - Low Poly Fantasy Warrior/pose.controller
+  uploadId: 267882

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2213a6d7ccdadc1428b9e3f504536510
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202664
+  packageName: Placr
+  packageVersion: 1.1.1
+  assetPath: Assets/ThirteenPixels/Placr/Editor/Modifiers/PlacrModifierRandomRotationOffset.cs
+  uploadId: 564250

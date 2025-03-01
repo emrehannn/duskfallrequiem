@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4755affa1bcc3bf4c8899f96bd44bf94
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202273
+  packageName: Simple Spin Blur
+  packageVersion: 1.0
+  assetPath: Assets/Simple Spin Blur/Materials/PlaneBlack.mat
+  uploadId: 459916

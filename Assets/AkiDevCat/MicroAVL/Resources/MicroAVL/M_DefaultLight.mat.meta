@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cd835a62bd5b8ed448bbfcd4480148de
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 266587
+  packageName: MicroAVL [URP] - Volumetric Lights
+  packageVersion: 1.0
+  assetPath: Assets/AkiDevCat/MicroAVL/Resources/MicroAVL/M_DefaultLight.mat
+  uploadId: 678285

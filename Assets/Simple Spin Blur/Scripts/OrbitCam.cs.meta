@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: aa971071d221f7a4ea4669a8f3313ba6
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 202273
+  packageName: Simple Spin Blur
+  packageVersion: 1.0
+  assetPath: Assets/Simple Spin Blur/Scripts/OrbitCam.cs
+  uploadId: 459916
