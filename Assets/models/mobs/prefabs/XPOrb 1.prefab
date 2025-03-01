@@ -138,8 +138,8 @@ MonoBehaviour:
   floatSpeed: 4
   floatHeight: 0.5
   lifetime: 90
-  magnetDistance: 15
-  magnetSpeed: 20
+  magnetDistance: 3
+  magnetSpeed: 2
 --- !u!136 &-5174136075939254422
 CapsuleCollider:
   m_ObjectHideFlags: 0

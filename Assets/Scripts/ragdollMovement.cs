@@ -18,6 +18,8 @@ public class ragdollMovement : MonoBehaviour
     [SerializeField] private Rigidbody headBone;
     [SerializeField] private Camera mainCamera;
 
+    public Rigidbody HipBone => hipBone;
+
     private Vector3 moveDirection;
     private float currentGroundDistance;
     private bool isMoving;
@@ -197,7 +199,7 @@ public class ragdollMovement : MonoBehaviour
                 hipBone.linearVelocity = Vector3.MoveTowards(
                     hipBone.linearVelocity,
                     targetVelocity,
-                    acceleration * Time.fixedDeltaTime
+                    acceleration * Time.fixedDeltaTime *2
                 );
             }
             else

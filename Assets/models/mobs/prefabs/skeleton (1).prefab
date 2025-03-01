@@ -307,7 +307,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2000
+    damper: 0
   m_LowTwistLimit:
     limit: -80
     bounciness: 0
@@ -318,7 +318,7 @@ CharacterJoint:
     contactDistance: 0
   m_SwingLimitSpring:
     spring: 0
-    damper: 2000
+    damper: 0
   m_Swing1Limit:
     limit: 0
     bounciness: 0
@@ -3050,7 +3050,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2000
+    damper: 0
   m_LowTwistLimit:
     limit: 13.459778
     bounciness: 0
@@ -3061,7 +3061,7 @@ CharacterJoint:
     contactDistance: 0
   m_SwingLimitSpring:
     spring: 0
-    damper: 2000
+    damper: 0
   m_Swing1Limit:
     limit: 0
     bounciness: 0
@@ -3232,6 +3232,7 @@ MonoBehaviour:
   minimumDistance: 0
   retreatDistance: 50
   useDetectionRange: 0
+  enemyIndex: 0
   minHeightThreshold: 2.9
   heightCorrectionForce: 600
   groundLayer:
@@ -3993,7 +3994,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 0, z: 1}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2000
+    damper: 0
   m_LowTwistLimit:
     limit: -20
     bounciness: 0
@@ -4004,7 +4005,7 @@ CharacterJoint:
     contactDistance: 0
   m_SwingLimitSpring:
     spring: 0
-    damper: 2000
+    damper: 0
   m_Swing1Limit:
     limit: 10
     bounciness: 0
@@ -4989,7 +4990,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2000
+    damper: 0
   m_LowTwistLimit:
     limit: -20
     bounciness: 0
@@ -5000,7 +5001,7 @@ CharacterJoint:
     contactDistance: 0
   m_SwingLimitSpring:
     spring: 0
-    damper: 2000
+    damper: 0
   m_Swing1Limit:
     limit: 30
     bounciness: 0
@@ -6297,7 +6298,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2000
+    damper: 0
   m_LowTwistLimit:
     limit: -90
     bounciness: 0
@@ -6308,7 +6309,7 @@ CharacterJoint:
     contactDistance: 0
   m_SwingLimitSpring:
     spring: 0
-    damper: 2000
+    damper: 0
   m_Swing1Limit:
     limit: 0
     bounciness: 0
@@ -6472,7 +6473,7 @@ CharacterJoint:
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2000
+    damper: 0
   m_LowTwistLimit:
     limit: 16.398207
     bounciness: 0
@@ -6483,7 +6484,7 @@ CharacterJoint:
     contactDistance: 0
   m_SwingLimitSpring:
     spring: 0
-    damper: 2000
+    damper: 0
   m_Swing1Limit:
     limit: 47.737335
     bounciness: 0
@@ -6883,7 +6884,7 @@ CharacterJoint:
   m_SwingAxis: {x: 0, y: 0, z: -1}
   m_TwistLimitSpring:
     spring: 0
-    damper: 2000
+    damper: 0
   m_LowTwistLimit:
     limit: -20
     bounciness: 0
@@ -6894,7 +6895,7 @@ CharacterJoint:
     contactDistance: 0
   m_SwingLimitSpring:
     spring: 0
-    damper: 2000
+    damper: 0
   m_Swing1Limit:
     limit: 30
     bounciness: 0

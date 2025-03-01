@@ -12,33 +12,39 @@ public class XPOrb : MonoBehaviour
     
     [Header("Collection Settings")]
     [SerializeField] private float lifetime = 30f;
-    [SerializeField] private float magnetDistance = 5f;
-    [SerializeField] private float magnetSpeed = 15f;
+    [SerializeField] private float magnetDistance = 3f;
+    [SerializeField] private float magnetSpeed = 2f;
 
     private Vector3 startPosition;
     private bool isBeingCollected = false;
-    private bool hasBeenCollected = false;  // Add this flag for trigger detection
+    private bool hasBeenCollected = false;
+
+    private Rigidbody hipBoneTarget; // Use the hipBone Rigidbody from RagdollMovement
 
     private void Start()
     {
         startPosition = transform.position;
         Destroy(gameObject, lifetime);
+        
+        // Initial target search
+        FindHipBoneTarget();
     }
 
     private void Update()
     {
         if (!isBeingCollected)
         {
-            // Rotate and float
+            // Float animation remains the same
             transform.Rotate(Vector3.up * rotationSpeed * Time.deltaTime);
             float newY = startPosition.y + (Mathf.Sin(Time.time * floatSpeed) * floatHeight);
             transform.position = new Vector3(transform.position.x, newY, transform.position.z);
 
-            // Check for player proximity
-            PlayerHealth player = FindObjectOfType<PlayerHealth>();
-            if (player != null)
+            // Only search for target periodically for efficiency
+            if (Time.frameCount % 30 == 0) FindHipBoneTarget();
+
+            if (hipBoneTarget != null)
             {
-                float distanceToPlayer = Vector3.Distance(transform.position, player.transform.position);
+                float distanceToPlayer = Vector3.Distance(transform.position, hipBoneTarget.position);
                 if (distanceToPlayer < magnetDistance)
                 {
                     isBeingCollected = true;
@@ -47,15 +53,33 @@ public class XPOrb : MonoBehaviour
         }
         else
         {
-            // Move towards player
-            PlayerHealth player = FindObjectOfType<PlayerHealth>();
-            if (player != null)
+            // Update target continuously during collection
+            FindHipBoneTarget();
+            
+            if (hipBoneTarget != null)
             {
-                Vector3 direction = (player.transform.position - transform.position).normalized;
-                transform.position += direction * magnetSpeed * Time.deltaTime;
+                // Smoothly move toward the hip bone using Lerp
+                transform.position = Vector3.Lerp(
+                    transform.position,
+                    hipBoneTarget.position,
+                    magnetSpeed * Time.deltaTime
+                );
             }
         }
     }
+
+    private void FindHipBoneTarget()
+{
+    ragdollMovement ragdollMovement = FindAnyObjectByType<ragdollMovement>();
+    if (ragdollMovement != null)
+    {
+        hipBoneTarget = ragdollMovement.HipBone; // Access via property
+    }
+    else
+    {
+        hipBoneTarget = null;
+    }
+}
 
     public void SetXPValue(float value)
     {
@@ -64,24 +88,19 @@ public class XPOrb : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (hasBeenCollected) return;  // Skip if already collected
+        if (hasBeenCollected) return;
         
-        if (other.CompareTag("PlayerRagdoll"))
+        // Allow collection by the player's hip bone
+        if (other.CompareTag("PlayerRagdoll") || other.CompareTag("Player"))
         {
-            hasBeenCollected = true;  // Mark as collected
-            
-            // Disable collider immediately
+            hasBeenCollected = true;
             Collider myCollider = GetComponent<Collider>();
             if (myCollider != null) myCollider.enabled = false;
             
-            LevelSystem levelSystem = FindObjectOfType<LevelSystem>();
-            if (levelSystem != null)
-            {
-                levelSystem.GainXP(xpValue);
-                Debug.Log($"Added {xpValue} XP to player");
-            }
+            LevelSystem levelSystem = FindAnyObjectByType<LevelSystem>();
+            if (levelSystem != null) levelSystem.GainXP(xpValue);
             
-            Destroy(gameObject);  // Only destroy once
+            Destroy(gameObject);
         }
     }
 }
