@@ -46,14 +46,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53a086144a8bc18489c09f5a3c4feb2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healAmount: 20
+  healAmount: 15
   healSound: {fileID: 0}
-  rotationSpeed: 50
-  floatSpeed: 1
+  rotationSpeed: 60
+  floatSpeed: 5
   floatHeight: 0.5
   lifetime: 30
-  magnetDistance: 5
-  magnetSpeed: 10
+  magnetDistance: 3
+  magnetSpeed: 2
 --- !u!65 &1461222045776369409
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -1,4 +1,3 @@
-// PlayerHealth.cs
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,17 +7,12 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private float currentHealth;
     [SerializeField] private float damageInvulnerabilityTime = 1f;
-    [Header("Healing")]
-
-
 
     [Header("UI")]
-    private float smoothUpdateSpeed = 5f;
-    private float lipOffset = 0.1f;  
     [SerializeField] private Image healthBarFill;
-
-    [SerializeField] private Image healthBarLip;  
-
+    [SerializeField] private Image healthBarLip;
+    private float smoothUpdateSpeed = 5f;
+    private float lipOffset = 0.3f;  
     private float nextDamageTime;
     private float targetHealthBarFill;
     private float targetLipFill;
@@ -29,35 +23,26 @@ public class PlayerHealth : MonoBehaviour
         targetHealthBarFill = 1f;
         targetLipFill = targetHealthBarFill + lipOffset;
 
-
-        Collider[] damageableColliders = GetComponentsInChildren<Collider>();
-        foreach (Collider col in damageableColliders)
+        // Tag only this bone as PlayerRagdoll
+        Collider col = GetComponent<Collider>();
+        if (col != null)
         {
             col.tag = "PlayerRagdoll";
         }
-
+        else
+        {
+            Debug.LogWarning("No collider found on the root bone. Add a collider to enable damage detection.");
+        }
     }
 
     private void Update()
     {
-
-            healthBarFill.fillAmount = Mathf.Lerp(healthBarFill.fillAmount, targetHealthBarFill, Time.deltaTime * smoothUpdateSpeed);
-
-            float currentLipTarget = targetHealthBarFill + lipOffset;
-
-            healthBarLip.fillAmount = healthBarFill.fillAmount + 0.01f;
-
-        
-
-
-
-
+        healthBarFill.fillAmount = Mathf.Lerp(healthBarFill.fillAmount, targetHealthBarFill, Time.deltaTime * smoothUpdateSpeed);
+        healthBarLip.fillAmount = healthBarFill.fillAmount + 0.01f;
     }
 
     public void TakeDamage(float damage)
     {
-
-        
         if (Time.time < nextDamageTime)
         {
             Debug.Log("Damage blocked by cooldown");
@@ -69,7 +54,6 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= damage;
         currentHealth = Mathf.Max(currentHealth, 0);
         
-        
         targetHealthBarFill = currentHealth / maxHealth;
         targetLipFill = targetHealthBarFill + lipOffset;
 
@@ -79,20 +63,24 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-public static bool isPlayerDead = false;
+    public static bool isPlayerDead = false;
 
-private void Die()
-{
-    Debug.Log("Player died!");
-    isPlayerDead = true;  // Set the static flag
-
-    // Handle ragdoll death
-    ragdollMovement movement = GetComponent<ragdollMovement>();
-    if (movement != null)
+    private void Die()
     {
-        movement.HandleDeath();
+        Debug.Log("Player died!");
+        isPlayerDead = true;  // Set the static flag
+
+        // Handle ragdoll death
+        ragdollMovement movement = GetComponentInParent<ragdollMovement>();
+        if (movement != null)
+        {
+            movement.HandleDeath();
+        }
+        else
+        {
+            Debug.LogError("ragdollMovement script not found in parent hierarchy!");
+        }
     }
-}
 
     public void Heal(float amount)
     {
@@ -112,7 +100,4 @@ private void Die()
     {
         return Time.time >= nextDamageTime;
     }
-
-
-
 }

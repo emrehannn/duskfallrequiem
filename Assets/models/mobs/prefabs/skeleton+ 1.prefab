@@ -2388,9 +2388,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.02
-  m_Height: 1
+  m_Height: 0.8327343
   m_Direction: 1
-  m_Center: {x: 0.000000103325675, y: -0.49529082, z: 0.00000055064123}
+  m_Center: {x: -0.000005620341, y: -0.57892895, z: 0.0000013855265}
 --- !u!1 &3188990390506804392
 GameObject:
   m_ObjectHideFlags: 0
@@ -4079,8 +4079,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0024248494, y: 0.00323676, z: 0.0023426546}
-  m_Center: {x: 0.00016756759, y: 0.0016183605, z: 0.00085520814}
+  m_Size: {x: 0.0024248494, y: 0.002715246, z: 0.0023426549}
+  m_Center: {x: 0.00016756754, y: 0.0018791214, z: 0.00085520814}
 --- !u!144 &8804998772843216795
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -5744,6 +5744,7 @@ GameObject:
   - component: {fileID: 5971377575584782550}
   - component: {fileID: 1131326561796498924}
   - component: {fileID: 3954885100059516265}
+  - component: {fileID: 23502246911738312}
   m_Layer: 10
   m_Name: spine
   m_TagString: EnemyRagdoll
@@ -5817,8 +5818,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.0027490256, y: 0.0025213067, z: 0.0013710727}
-  m_Center: {x: 0.00020236011, y: 0.0012197901, z: 0.00018184763}
+  m_Size: {x: 0.0027490256, y: 0.0015815445, z: 0.0013710726}
+  m_Center: {x: 0.00020236007, y: 0.00074990606, z: 0.00018184644}
 --- !u!114 &3954885100059516265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5831,6 +5832,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de9349acf0fb161449684540d9398f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!144 &23502246911738312
+CharacterJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7177928819631875205}
+  serializedVersion: 3
+  m_ConnectedBody: {fileID: 6688020999718305368}
+  m_ConnectedArticulationBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 0, z: 0}
+  m_Axis: {x: 1, y: 0, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_SwingAxis: {x: 0, y: 1, z: 0}
+  m_TwistLimitSpring:
+    spring: 0
+    damper: 0
+  m_LowTwistLimit:
+    limit: -20
+    bounciness: 0
+    contactDistance: 0
+  m_HighTwistLimit:
+    limit: 70
+    bounciness: 0
+    contactDistance: 0
+  m_SwingLimitSpring:
+    spring: 0
+    damper: 0
+  m_Swing1Limit:
+    limit: 40
+    bounciness: 0
+    contactDistance: 0
+  m_Swing2Limit:
+    limit: 40
+    bounciness: 0
+    contactDistance: 0
+  m_EnableProjection: 0
+  m_ProjectionDistance: 0.1
+  m_ProjectionAngle: 180
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
 --- !u!1 &7206981376889098524
 GameObject:
   m_ObjectHideFlags: 0
@@ -6578,6 +6625,8 @@ MonoBehaviour:
   detectionRange: 100
   minimumDistance: 0
   retreatDistance: 50
+  useDetectionRange: 1
+  enemyIndex: 0
   minHeightThreshold: 8.68
   heightCorrectionForce: 200
   groundLayer:
@@ -6586,6 +6635,7 @@ MonoBehaviour:
   hipBone: {fileID: 5971377575584782550}
   backBone: {fileID: 6688020999718305368}
   headBone: {fileID: 3663492315452912196}
+  moveDirection: {x: 0, y: 0, z: 0}
   damageInvulnerabilityTime: 0.5
 --- !u!114 &1441048310344203902
 MonoBehaviour:
@@ -7919,9 +7969,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.00013592328
-  m_Height: 0.003
+  m_Height: 0.0024097976
   m_Direction: 1
-  m_Center: {x: 0.000084566505, y: 0.0018, z: -5.6673005e-10}
+  m_Center: {x: 0.00008456586, y: 0.0015048967, z: -3.6740264e-10}
 --- !u!144 &7825815304550117907
 CharacterJoint:
   m_ObjectHideFlags: 0

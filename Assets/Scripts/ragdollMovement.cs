@@ -162,13 +162,13 @@ public class ragdollMovement : MonoBehaviour
     }
 
     private void CheckGroundDistance()
+{
+    if (hipBone != null)
     {
-        if (headBone != null)
+        RaycastHit hit;
+        if (Physics.Raycast(hipBone.position, Vector3.down, out hit, 10f, groundLayer))
         {
-            RaycastHit hit;
-            if (Physics.Raycast(headBone.position, Vector3.down, out hit, 10f, groundLayer))
-            {
-                currentGroundDistance = hit.distance;
+            currentGroundDistance = hit.distance;
 
                 Debug.DrawRay(headBone.position, Vector3.down * hit.distance,
                     currentGroundDistance < minHeightThreshold ? Color.red : Color.green);
