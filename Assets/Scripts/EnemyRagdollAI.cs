@@ -6,10 +6,8 @@ public class EnemyRagdollAI : MonoBehaviour
     public float maxSpeed = 3f; // Change from private to public
     [SerializeField] private float acceleration = 50f;
     [SerializeField] private float rotationSpeed = 6f;
-    [SerializeField] private float detectionRange = 200f;
-    [SerializeField] private float minimumDistance = 2f;
     [SerializeField] private float retreatDistance = 20f;
-    [SerializeField] private bool useDetectionRange = true; // Add this
+
     public int enemyIndex;
 
     [Header("Height Settings")]
@@ -21,6 +19,10 @@ public class EnemyRagdollAI : MonoBehaviour
     [SerializeField] private Rigidbody hipBone;
     [SerializeField] private Rigidbody backBone;
     [SerializeField] private Rigidbody headBone;
+    [Header("Spring Settings")]
+    [SerializeField] private float enemySpecificStiffness = 20f;    
+    [SerializeField] private float enemySpecificDamping = 5f;
+
 
 
 private float DeadrotationSpeed = 2f;  // Add this at the top with your other variables
@@ -36,6 +38,7 @@ private float retreatSpeed = 2f;  // Add this too - lower value = slower retreat
         private void Start()
     {
         // Add these two crucial initialization calls
+   
         InitializeRagdoll();
     }
 
@@ -92,8 +95,7 @@ private void Die()
     // Make them all just ragdoll pieces
     foreach (Rigidbody rb in allBones)
     {
-        rb.linearVelocity = Vector3.zero;  // Reset any existing velocity
-        rb.angularVelocity = Vector3.zero;
+
         rb.useGravity = true;
         rb.isKinematic = false;
     }
@@ -162,72 +164,39 @@ private void Die()
     if (!PlayerHealth.isPlayerDead)
 
     {
-
-        if (PlayerTarget.Instance != null)
-
-        {
-
+            
             ChasePlayer();
 
             HandleRotation();
 
-        }
 
     }
-
     else
-
     {
-
-        if (!isMoving && PlayerTarget.Instance != null)  // Check if we haven't stored death position yet
-
+        if (!isMoving && PlayerManager.Instance.GetPlayer() != null)
         {
-
-            playerDeathPosition = PlayerTarget.Instance.position;
-
-            isMoving = true;  // Set this so we don't try to get position again
-
+            playerDeathPosition = PlayerManager.Instance.GetPlayer().position;
+            isMoving = true;
         }
 
         RetreatFromDeath();
-
         HandleRetreatRotation();
-
     }
 
 }
 
     
 private void ChasePlayer()
-
 {
+    Transform playerTransform = PlayerManager.Instance.GetPlayer();
+    if (playerTransform == null) return;
 
-    float distanceToPlayer = Vector3.Distance(hipBone.position, PlayerTarget.Instance.position);
+    // Always chase, no distance checks
+    isMoving = true;
+    Vector3 directionToPlayer = (playerTransform.position - hipBone.position).normalized;
+    directionToPlayer.y = 0;
+    moveDirection = directionToPlayer;
 
-
-    if (!useDetectionRange || (distanceToPlayer <= detectionRange && distanceToPlayer > minimumDistance))
-
-    {
-
-        isMoving = true;
-
-        Vector3 directionToPlayer = (PlayerTarget.Instance.position - hipBone.position).normalized;
-
-        directionToPlayer.y = 0;
-
-        moveDirection = directionToPlayer;
-
-    }
-
-    else
-
-    {
-
-        isMoving = false;
-
-        moveDirection = Vector3.zero;
-
-    }
 
 }
 
@@ -270,7 +239,10 @@ private void ChasePlayer()
 
     private void HandleRotation()
 {
-    Vector3 directionToPlayer = (PlayerTarget.Instance.position - hipBone.position).normalized;
+    Transform playerTransform = PlayerManager.Instance.GetPlayer();
+    if (playerTransform == null) return;
+
+    Vector3 directionToPlayer = (playerTransform.position - hipBone.position).normalized;
     directionToPlayer.y = 0;
 
     if (directionToPlayer != Vector3.zero)
@@ -296,54 +268,56 @@ private void ChasePlayer()
 
     private void FixedUpdate()
     {
+
         CheckGroundDistance();
         MoveCharacter();
     }
 
     private void CheckGroundDistance()
+{
+    if (hipBone == null) return;
+
+    RaycastHit hit;
+    bool isGrounded = Physics.Raycast(hipBone.position, Vector3.down, out hit, 10f, groundLayer);
+
+    if (isGrounded)
     {
-        if (headBone != null)
+        currentGroundDistance = hit.distance;
+        float heightError = minHeightThreshold - currentGroundDistance;
+        float verticalVelocity = hipBone.linearVelocity.y;
+
+        // Fetch the force using this enemy's specific values
+        float totalCorrectionForce = SpringLookupTable.Instance.GetSpringForce(heightError, verticalVelocity, enemySpecificStiffness, enemySpecificDamping);
+
+        // Apply force
+        hipBone.AddForce(Vector3.up * totalCorrectionForce, ForceMode.Acceleration);
+    }
+}
+
+
+
+
+private void MoveCharacter()
+{
+    if (hipBone != null)
+    {
+        if (isMoving)
         {
-            RaycastHit hit;
-            if (Physics.Raycast(headBone.position, Vector3.down, out hit, 10f, groundLayer))
-            {
-                currentGroundDistance = hit.distance;
-
-                if (currentGroundDistance < minHeightThreshold)
-                {
-                    float heightDifference = minHeightThreshold - currentGroundDistance;
-                    float correctionMultiplier = heightDifference / minHeightThreshold;
-
-                    Vector3 correctionForce = Vector3.up * heightCorrectionForce * correctionMultiplier;
-                    hipBone.AddForce(correctionForce, ForceMode.Acceleration);
-                    backBone.AddForce(correctionForce, ForceMode.Acceleration);
-                    headBone.AddForce(correctionForce, ForceMode.Acceleration);
-                }
-            }
+            Vector3 targetVelocity = moveDirection * maxSpeed;
+            targetVelocity.y = hipBone.linearVelocity.y;
+            
+            hipBone.linearVelocity = Vector3.MoveTowards(
+                hipBone.linearVelocity,
+                targetVelocity,
+                acceleration * Time.fixedDeltaTime
+            );
+        }
+        else
+        {
+            Vector3 currentVel = hipBone.linearVelocity;
+            currentVel.y = hipBone.linearVelocity.y;
+            hipBone.linearVelocity = Vector3.MoveTowards(currentVel, Vector3.zero, acceleration * Time.fixedDeltaTime);
         }
     }
-
-    private void MoveCharacter()
-    {
-        if (hipBone != null)
-        {
-            if (isMoving)
-            {
-                Vector3 targetVelocity = moveDirection * maxSpeed;
-                targetVelocity.y = hipBone.linearVelocity.y;
-                
-                hipBone.linearVelocity = Vector3.MoveTowards(
-                    hipBone.linearVelocity,
-                    targetVelocity,
-                    acceleration * Time.fixedDeltaTime
-                );
-            }
-            else
-            {
-                Vector3 currentVel = hipBone.linearVelocity;
-                currentVel.y = hipBone.linearVelocity.y;
-                hipBone.linearVelocity = Vector3.MoveTowards(currentVel, Vector3.zero, acceleration * Time.fixedDeltaTime);
-            }
-        }
-    }
+}
 }

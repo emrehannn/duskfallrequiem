@@ -7,6 +7,9 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float maxHealth = 100f;
     [SerializeField] private float currentHealth;
     [SerializeField] private float damageInvulnerabilityTime = 1f;
+    [SerializeField] private Rigidbody hipBone;
+    [SerializeField] private Rigidbody backBone;
+    [SerializeField] private Rigidbody headBone;
 
     [Header("UI")]
     [SerializeField] private Image healthBarFill;
@@ -16,12 +19,26 @@ public class PlayerHealth : MonoBehaviour
     private float nextDamageTime;
     private float targetHealthBarFill;
     private float targetLipFill;
+    public Rigidbody HipBone => hipBone;
 
     private void Start()
     {
         currentHealth = maxHealth;
+        Debug.Log($"Player health initialized. Current health: {currentHealth}");
         targetHealthBarFill = 1f;
         targetLipFill = targetHealthBarFill + lipOffset;
+
+    // Set player target using hipBone
+    if (hipBone != null)
+    {
+        PlayerManager.Instance.SetPlayer(hipBone.transform);
+        Debug.Log("Set player in PlayerManager using hipBone");
+    }
+    else
+    {
+        PlayerManager.Instance.SetPlayer(transform);
+        Debug.Log("Set player in PlayerManager using transform");
+    }
 
         // Tag only this bone as PlayerRagdoll
         Collider col = GetComponent<Collider>();
@@ -33,6 +50,7 @@ public class PlayerHealth : MonoBehaviour
         {
             Debug.LogWarning("No collider found on the root bone. Add a collider to enable damage detection.");
         }
+
     }
 
     private void Update()
@@ -56,6 +74,7 @@ public class PlayerHealth : MonoBehaviour
         
         targetHealthBarFill = currentHealth / maxHealth;
         targetLipFill = targetHealthBarFill + lipOffset;
+        Debug.Log($"Took {damage} damage. Current health: {currentHealth}");
 
         if (currentHealth <= 0)
         {
@@ -68,24 +87,22 @@ public class PlayerHealth : MonoBehaviour
     private void Die()
     {
         Debug.Log("Player died!");
-        isPlayerDead = true;  // Set the static flag
+        isPlayerDead = true;
 
-        // Handle ragdoll death
-        ragdollMovement movement = GetComponentInParent<ragdollMovement>();
-        if (movement != null)
+        RagdollController ragdollController = GetComponentInParent<RagdollController>();
+        if (ragdollController != null)
         {
-            movement.HandleDeath();
+            ragdollController.HandleDeath();
         }
         else
         {
-            Debug.LogError("ragdollMovement script not found in parent hierarchy!");
+            Debug.LogError("RagdollController script not found in parent hierarchy!");
         }
     }
 
     public void Heal(float amount)
     {
         Debug.Log($"Heal called. Current Health before healing: {currentHealth}");
-        
         currentHealth = Mathf.Min(currentHealth + amount, maxHealth);
         targetHealthBarFill = currentHealth / maxHealth;
         Debug.Log($"Healed for {amount}. New health: {currentHealth}");

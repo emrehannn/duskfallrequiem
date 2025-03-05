@@ -67,10 +67,28 @@ public class Apple : MonoBehaviour
     }
 
     private void FindHipBoneTarget()
+{
+    Transform playerTransform = PlayerManager.Instance.GetPlayer();
+    if (playerTransform != null)
     {
-        ragdollMovement ragdollMovement = FindAnyObjectByType<ragdollMovement>();
-        hipBoneTarget = ragdollMovement != null ? ragdollMovement.HipBone : null;
+        // Try to find the hip bone in the player's hierarchy
+        Rigidbody[] rigidbodies = playerTransform.GetComponentsInChildren<Rigidbody>();
+        foreach (Rigidbody rb in rigidbodies)
+        {
+            if (rb.gameObject.name.ToLower().Contains("hip"))
+            {
+                hipBoneTarget = rb;
+                break;
+            }
+        }
+        
+        // If we couldn't find the hip bone, use the first rigidbody as fallback
+        if (hipBoneTarget == null && rigidbodies.Length > 0)
+        {
+            hipBoneTarget = rigidbodies[0];
+        }
     }
+}
 
     private void OnTriggerEnter(Collider other)
     {

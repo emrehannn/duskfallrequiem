@@ -42,60 +42,23 @@ public class ProjectSettingsInjector : EditorWindow
  
             SerializedProperty layersProp = tagManager.FindProperty("layers");
  
-            string canBeGrabbed = "CanBeGrabbed";
  
             bool found = false;
             for (int i = 0; i < tagsProp.arraySize; i++)
             {
                 SerializedProperty t = tagsProp.GetArrayElementAtIndex(i);
-                if (t.stringValue.Equals(canBeGrabbed))
-                {
-                    found = true; break;
-                }
+
             }
  
             if (!found)
             {
                 tagsProp.InsertArrayElementAtIndex(0);
                 SerializedProperty n = tagsProp.GetArrayElementAtIndex(0);
-                n.stringValue = canBeGrabbed;
+
             }
             
-            string layerName_1 = "Player_1";
-            string layerName_2 = "Player_2";
-            string layerName_3 = "Player_3";
-            string layerName_4 = "Player_4";
-            string layerName_5 = "Ground";
+
  
-            SerializedProperty sp1 = layersProp.GetArrayElementAtIndex(10);
-            if (sp1 != null)
-            {
-                sp1.stringValue = layerName_1;
-            }
-            
-            SerializedProperty sp2 = layersProp.GetArrayElementAtIndex(11);
-            if (sp2 != null)
-            {
-                sp2.stringValue = layerName_2;
-            }
-            
-            SerializedProperty sp3 = layersProp.GetArrayElementAtIndex(12);
-            if (sp3 != null)
-            {
-                sp3.stringValue = layerName_3;
-            }
-            
-            SerializedProperty sp4 = layersProp.GetArrayElementAtIndex(13);
-            if (sp4 != null)
-            {
-                sp4.stringValue = layerName_4;
-            }
-            
-            SerializedProperty sp5 = layersProp.GetArrayElementAtIndex(14);
-            if (sp5 != null)
-            {
-                sp5.stringValue = layerName_5;
-            }
 
             tagManager.ApplyModifiedProperties();
             

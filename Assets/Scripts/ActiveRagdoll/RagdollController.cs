@@ -10,6 +10,9 @@ public class RagdollController : MonoBehaviour, IInputListener
 
     [SerializeField] private Rigidbody rightHand;
     [SerializeField] private Rigidbody leftHand;
+    [Header("Death Settings")] 
+    public bool isDead;
+
 
     [SerializeField] private Transform centerOfMass;
 
@@ -145,6 +148,25 @@ public class RagdollController : MonoBehaviour, IInputListener
         LowerLeftLegTarget = GetJointTargetRotation(LOWER_LEFT_LEG);
     }
 
+    public void HandleDeath()
+{
+    isDead = true;
+    autoGetUpWhenPossible = false; // Disable auto-getup
+
+    
+    // Release all constraints and add damping
+    Rigidbody[] allBones = GetComponentsInChildren<Rigidbody>();
+    foreach (Rigidbody rb in allBones)
+    {
+        rb.constraints = RigidbodyConstraints.None;
+        rb.interpolation = RigidbodyInterpolation.Interpolate;
+        rb.collisionDetectionMode = CollisionDetectionMode.Continuous;
+    }
+
+    ActivateRagdoll();
+    enabled = false; // Disable the entire controller
+}
+
     [MethodImpl(MethodImplOptions.AggressiveInlining)]
     private Quaternion GetJointTargetRotation(string jointName)
     {
@@ -153,6 +175,7 @@ public class RagdollController : MonoBehaviour, IInputListener
 
     private void Update()
     {
+        if (isDead) return;
         if (!inAir)
         {
             PlayerMovement();
@@ -182,6 +205,7 @@ public class RagdollController : MonoBehaviour, IInputListener
 
     private void FixedUpdate()
     {
+        if (isDead) return;
         PerformWalking();
         PerformPlayerRotation();
         ResetPlayerPose();
@@ -307,7 +331,7 @@ public class RagdollController : MonoBehaviour, IInputListener
         Transform rootTransform = RagdollDict[ROOT].transform;
         Ray ray = new Ray(rootTransform.position, -rootTransform.up);
         bool isHittingGround = Physics.Raycast(ray, out _, balanceHeight, 1 << groundLayer);
-
+        if(isDead) return;
         if (!isHittingGround)
         {
             if (balanced)

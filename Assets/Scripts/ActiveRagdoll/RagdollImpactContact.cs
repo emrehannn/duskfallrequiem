@@ -6,6 +6,7 @@ public class RagdollImpactContact : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
+         if(ragdollController.isDead) return; 
         if (ragdollController.canBeKnockoutByImpact && col.relativeVelocity.magnitude > ragdollController.requiredForceToBeKO)
         {
             ragdollController.ActivateRagdoll();

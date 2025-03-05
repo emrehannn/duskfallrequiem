@@ -3164,7 +3164,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8433535864546977854}
-  - component: {fileID: 6537014369313024150}
   - component: {fileID: 2753558939616216396}
   - component: {fileID: 6597531555382607043}
   m_Layer: 10
@@ -3191,28 +3190,6 @@ Transform:
   - {fileID: 5215748677863069948}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 183.564, z: 0}
---- !u!95 &6537014369313024150
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3313869742625503796}
-  m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: bb83b53305e72b7498fe95a42fca55ae, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &2753558939616216396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3225,22 +3202,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e97e63dd701023e49a488b722737bc9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 2
+  maxSpeed: 3
   acceleration: 50
   rotationSpeed: 10
-  detectionRange: 100
-  minimumDistance: 0
   retreatDistance: 50
-  useDetectionRange: 0
   enemyIndex: 0
-  minHeightThreshold: 2.9
-  heightCorrectionForce: 600
+  minHeightThreshold: 5
+  heightCorrectionForce: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   hipBone: {fileID: 7927552695826407367}
   backBone: {fileID: 7480246897748273291}
   headBone: {fileID: 7876507139292980613}
+  enemySpecificStiffness: 180
+  enemySpecificDamping: 50
   moveDirection: {x: 0, y: 0, z: 0}
   damageInvulnerabilityTime: 0.5
 --- !u!114 &6597531555382607043
@@ -7979,7 +7955,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8320530238564429924}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 0290dfd4d1160a04698239fee11d6303, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -7994,7 +7970,7 @@ CapsuleCollider:
   m_Radius: 0.0030112488
   m_Height: 0.021074649
   m_Direction: 1
-  m_Center: {x: 0.00051396235, y: -0.0032460752, z: 0.000988186}
+  m_Center: {x: 0.00051396235, y: -0.003, z: 0.000988186}
 --- !u!1 &8457146862041392179
 GameObject:
   m_ObjectHideFlags: 0

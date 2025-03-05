@@ -12,7 +12,6 @@ public class VirtualEnemyManager : MonoBehaviour
     [SerializeField] private Vector2 mapSize = new Vector2(100f, 100f);
     [SerializeField] private float minDistanceFromPlayer = 20f;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private Transform player;
     [SerializeField] private GameObject[] enemyPrefabs;
     [SerializeField] private int maxEnemies = 1000;
     [SerializeField] private ChaoticWaveManager chaosManager;
@@ -57,7 +56,7 @@ public class VirtualEnemyManager : MonoBehaviour
     return enemyPrefabs;
 }
     public List<VirtualEnemy> GetActiveEnemies() { return activeEnemies; }
-    public Transform GetPlayer() { return player; }
+
 
     private void Start()
     {
@@ -121,68 +120,81 @@ public class VirtualEnemyManager : MonoBehaviour
         regularSpawningEnabled = false;
     }
 
-    private void Update()
+private void Update()
+{
+    Transform playerTransform = PlayerManager.Instance.GetPlayer();
+    if (playerTransform == null || PlayerHealth.isPlayerDead) return;
+
+    UpdateVirtualEnemies();
+    CheckStuckEnemies();
+
+    if (regularSpawningEnabled)
     {
-        if (player == null || PlayerHealth.isPlayerDead) return;
-
-        UpdateVirtualEnemies();
-        CheckStuckEnemies();
-
-        if (regularSpawningEnabled)
+        if (Time.time >= nextWaveTime)
         {
-            if (Time.time >= nextWaveTime)
-            {
-                StartNewWave();
-            }
-
-            if (Time.time >= nextSpawnTime && activeEnemies.Count < maxEnemies)
-            {
-                SpawnEnemy();
-            }
+            StartNewWave();
         }
-        CleanDeadEnemies();
+
+        if (Time.time >= nextSpawnTime && activeEnemies.Count < maxEnemies)
+        {
+            SpawnEnemy();
+        }
     }
+    CleanDeadEnemies();
+}
 
         private void UpdateVirtualEnemies()
-    {
-        foreach(var enemy in activeEnemies)
-        {
-            if(!enemy.isReal)
-            {
-                enemy.UpdatePosition(player.position);
-            }
-        }
-    }
+{
+    Transform playerTransform = PlayerManager.Instance.GetPlayer();
+    if (playerTransform == null) return;
 
-    private Vector3 GetValidSpawnPoint()
+    foreach(var enemy in activeEnemies)
     {
-        for (int i = 0; i < 30; i++)
+        if(!enemy.isReal)
         {
-            float randomX = transform.position.x + Random.Range(-mapSize.x/2, mapSize.x/2);
-            float randomZ = transform.position.z + Random.Range(-mapSize.y/2, mapSize.y/2);
-            
-            Vector3 randomPoint = new Vector3(randomX, 0f, randomZ);
-            
-            float distToPlayer = Vector3.Distance(
-                new Vector3(randomPoint.x, 0f, randomPoint.z), 
-                new Vector3(player.position.x, 0f, player.position.z)
-            );
-            
-            if (distToPlayer < minDistanceFromPlayer)
-                continue;
-                    
-            Vector3 rayStart = randomPoint + Vector3.up * 100f;
-            if (Physics.Raycast(rayStart, Vector3.down, out RaycastHit hit, 200f, groundLayer))
+            enemy.UpdatePosition(playerTransform.position);
+        }
+    }
+}
+
+private Vector3 GetValidSpawnPoint()
+{
+    Transform playerTransform = PlayerManager.Instance.GetPlayer();
+    if (playerTransform == null) return Vector3.zero;
+
+    for (int i = 0; i < 30; i++)
+    {
+        float randomX = transform.position.x + Random.Range(-mapSize.x/2, mapSize.x/2);
+        float randomZ = transform.position.z + Random.Range(-mapSize.y/2, mapSize.y/2);
+        
+        Vector3 randomPoint = new Vector3(randomX, 0f, randomZ);
+        
+        float distToPlayer = Vector3.Distance(
+            new Vector3(randomPoint.x, 0f, randomPoint.z), 
+            new Vector3(playerTransform.position.x, 0f, playerTransform.position.z)
+        );
+        
+        if (distToPlayer < minDistanceFromPlayer)
+            continue;
+                
+        Vector3 rayStart = randomPoint + Vector3.up * 100f;
+        if (Physics.Raycast(rayStart, Vector3.down, out RaycastHit hit, 200f, groundLayer))
+        {
+            if (!IsVisibleToCamera(hit.point))
             {
-                if (!IsVisibleToCamera(hit.point))
-                {
-                    return hit.point;
-                }
+                return hit.point;
             }
         }
-        
-        return Vector3.zero;
     }
+    
+    return Vector3.zero;
+}
+
+
+public Transform GetPlayer()
+{
+    return PlayerManager.Instance.GetPlayer();
+}
 
     private void StartNewWave()
 {
@@ -209,9 +221,9 @@ public class VirtualEnemyManager : MonoBehaviour
 
 private void SpawnEnemy()
 {
-    if (activeEnemies.Count >= maxEnemies || player == null)
+    if (activeEnemies.Count >= maxEnemies)
     {
-        Debug.Log($"Spawn failed: activeEnemies={activeEnemies.Count}, maxEnemies={maxEnemies}, player null={player == null}");
+        Debug.Log($"Spawn failed: activeEnemies={activeEnemies.Count}, maxEnemies={maxEnemies}");
         return;
     }
 

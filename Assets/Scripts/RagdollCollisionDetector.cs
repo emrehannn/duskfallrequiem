@@ -3,7 +3,7 @@ using UnityEngine;
 public class RagdollCollisionDetector : MonoBehaviour
 {
     [SerializeField] private static float enemyDamageAmount = 15;
-    [SerializeField] private static float playerDamageAmount = 100;
+    [SerializeField] private static float playerDamageAmount = 300;
     private PlayerHealth playerHealth;
 
     private void Start()
@@ -22,7 +22,7 @@ public class RagdollCollisionDetector : MonoBehaviour
         {
             if (playerHealth != null && playerHealth.CanTakeDamage())
             {
-
+                Debug.Log($"Enemy dealing {enemyDamageAmount} damage to player");
                 playerHealth.TakeDamage(enemyDamageAmount);
             }
         }
@@ -33,7 +33,7 @@ public class RagdollCollisionDetector : MonoBehaviour
             EnemyRagdollAI EnemyRagdollAI = collision.gameObject.GetComponentInParent<EnemyRagdollAI>();
             if (EnemyRagdollAI != null)
             {
-
+                Debug.Log($"Player weapon dealing {playerDamageAmount} damage to enemy");
                 EnemyRagdollAI.TakeDamage(playerDamageAmount);
             }
         }

@@ -959,7 +959,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 800520126278517148}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 0290dfd4d1160a04698239fee11d6303, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -974,7 +974,7 @@ CapsuleCollider:
   m_Radius: 0.004
   m_Height: 0.021074649
   m_Direction: 1
-  m_Center: {x: 0.00051396235, y: -0.0032460752, z: 0.000988186}
+  m_Center: {x: 0.00051396235, y: -0.001, z: 0.000988186}
 --- !u!1 &806676238057697631
 GameObject:
   m_ObjectHideFlags: 0
@@ -6271,19 +6271,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 3
-  acceleration: 50
-  rotationSpeed: 10
-  detectionRange: 100
-  minimumDistance: 0
+  acceleration: 100
+  rotationSpeed: 20
   retreatDistance: 50
+  enemyIndex: 0
   minHeightThreshold: 5
-  heightCorrectionForce: 600
+  heightCorrectionForce: 0
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   hipBone: {fileID: 6934990527567091158}
   backBone: {fileID: 4054549035014869539}
   headBone: {fileID: 5985918002717034803}
+  enemySpecificStiffness: 220
+  enemySpecificDamping: 50
+  moveDirection: {x: 0, y: 0, z: 0}
   damageInvulnerabilityTime: 0.5
 --- !u!114 &5190123059118328258
 MonoBehaviour:
