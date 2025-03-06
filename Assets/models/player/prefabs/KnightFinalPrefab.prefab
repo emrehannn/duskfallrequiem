@@ -3797,6 +3797,7 @@ GameObject:
   - component: {fileID: 3308748347514268606}
   - component: {fileID: 7826348441025938755}
   - component: {fileID: 1017400769486332090}
+  - component: {fileID: 5055706140463055273}
   m_Layer: 7
   m_Name: ActiveRagdoll_Root
   m_TagString: PlayerRagdoll
@@ -3984,6 +3985,26 @@ ConfigurableJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!114 &5055706140463055273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8196863460064878500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6c79559cbf0fcd429d4c01b1ae51b47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 100
+  damageInvulnerabilityTime: 1
+  hipBone: {fileID: 0}
+  backBone: {fileID: 0}
+  headBone: {fileID: 0}
+  healthBarFill: {fileID: 0}
+  healthBarLip: {fileID: 0}
 --- !u!1 &8885997246801223775
 GameObject:
   m_ObjectHideFlags: 0
