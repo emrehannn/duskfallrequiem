@@ -7,7 +7,7 @@ public class PerformanceManager : MonoBehaviour
     [SerializeField] private VirtualEnemyManager spawnSystem;
     
     [Header("Spawn Settings")]
-    [SerializeField] private float realEnemyRange = 38f;  // When to convert virtual to real
+    [SerializeField] private float realEnemyRange = 45f;  // When to convert virtual to real
     [SerializeField] private LayerMask groundLayer;
 
     private void Start()

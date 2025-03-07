@@ -27,8 +27,8 @@ TagManager:
   - nothing
   - fakebuild
   - playerragdoll
-  - Ground
-  - 
+  - PostProcess
+  - playerweapon
   - 
   - 
   - 

@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class RagdollCollisionDetector : MonoBehaviour
 {
-    [SerializeField] private static float enemyDamageAmount = 15;
-    [SerializeField] private static float playerDamageAmount = 300;
+    [SerializeField] private float enemyDamageAmount = 15f;
+    [SerializeField] private float playerDamageAmount = 10f;
     private PlayerHealth playerHealth;
 
     private void Start()
     {
-        playerHealth = FindAnyObjectByType<PlayerHealth>();
+        playerHealth = FindObjectOfType<PlayerHealth>();
         if (playerHealth == null)
         {
             Debug.LogError("PlayerHealth script not found in scene!");
@@ -17,6 +17,8 @@ public class RagdollCollisionDetector : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log($"I am {gameObject.name} colliding with {collision.gameObject.name}");
+
         // Enemy hitting player
         if (gameObject.CompareTag("EnemyRagdoll") && collision.gameObject.CompareTag("PlayerRagdoll"))
         {
@@ -30,11 +32,11 @@ public class RagdollCollisionDetector : MonoBehaviour
         // Player weapon hitting enemy
         if (gameObject.CompareTag("PlayerWeapon") && collision.gameObject.CompareTag("EnemyRagdoll"))
         {
-            EnemyRagdollAI EnemyRagdollAI = collision.gameObject.GetComponentInParent<EnemyRagdollAI>();
-            if (EnemyRagdollAI != null)
+            EnemyRagdollAI enemyRagdollAI = collision.gameObject.GetComponentInParent<EnemyRagdollAI>();
+            if (enemyRagdollAI != null)
             {
                 Debug.Log($"Player weapon dealing {playerDamageAmount} damage to enemy");
-                EnemyRagdollAI.TakeDamage(playerDamageAmount);
+                enemyRagdollAI.TakeDamage(playerDamageAmount);
             }
         }
     }
