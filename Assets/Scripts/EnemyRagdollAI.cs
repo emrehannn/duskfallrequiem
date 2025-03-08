@@ -20,8 +20,8 @@ public class EnemyRagdollAI : MonoBehaviour
     [SerializeField] private Rigidbody backBone;
     [SerializeField] private Rigidbody headBone;
     [Header("Spring Settings")]
-    [SerializeField] private float enemySpecificStiffness = 20f;    
-    [SerializeField] private float enemySpecificDamping = 5f;
+    [SerializeField] private float enemySpecificStiffness = 400f;    
+    [SerializeField] private float enemySpecificDamping = 100f;
 
 
 

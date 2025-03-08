@@ -3002,7 +3002,7 @@ MonoBehaviour:
   rotationSpeed: 5
   retreatDistance: 50
   enemyIndex: 0
-  minHeightThreshold: 2
+  minHeightThreshold: 1.7
   heightCorrectionForce: 50
   groundLayer:
     serializedVersion: 2
@@ -3010,10 +3010,10 @@ MonoBehaviour:
   hipBone: {fileID: 7927552695826407367}
   backBone: {fileID: 7480246897748273291}
   headBone: {fileID: 7876507139292980613}
-  enemySpecificStiffness: 500
+  enemySpecificStiffness: 400
   enemySpecificDamping: 100
   moveDirection: {x: 0, y: 0, z: 0}
-  damageInvulnerabilityTime: 0.5
+  damageInvulnerabilityTime: 0.1
 --- !u!1 &3350637478640234199
 GameObject:
   m_ObjectHideFlags: 0

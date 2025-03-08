@@ -8,8 +8,8 @@ public class SpringLookupTable : MonoBehaviour
     [SerializeField] private int tableResolution = 50;
     [SerializeField] private float maxHeightError = 1f;
     [SerializeField] private float maxVelocity = 5f;
-    [SerializeField] private float heightStiffness = 20f; // Spring constant (K)
-    [SerializeField] private float heightDamping = 5f; // Damping coefficient (D)
+    [SerializeField] private float heightStiffness = 400f; // Spring constant (K)
+    [SerializeField] private float heightDamping = 100f; // Damping coefficient (D)
 
     private void Awake()
     {

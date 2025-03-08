@@ -106,21 +106,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c585b6c0a5345a24cb81f022eaf3b7b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  mainCamera: {fileID: 0}
-  rb: {fileID: 0}
-  useMouseTracking: 1
-  useConstantOrbit: 0
-  useSelfRotation: 0
-  orbitDistance: 3
-  hiltOffset: 0
-  rotationSpeed: 7
-  orbitSpeed: 100
-  spinSpeed: 360
-  heightOffset: 0
-  tipAxis: 0
-  invertTip: 1
-  additionalRotation: 180
+  orbitDistance: 2
+  yOffset: 0
+  rotationSpeed: 700
+  momentumDecay: 0.95
+  maxAngularVelocity: 1500
+  horizontalInputAxis: Mouse X
+  useRawInput: 0
 --- !u!54 &3553526273465251008
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -129,9 +121,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3896753813878904455}
   serializedVersion: 4
-  m_Mass: 2400
+  m_Mass: 50
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -144,10 +136,10 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 2
+  m_IsKinematic: 0
+  m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 2
+  m_CollisionDetection: 0
 --- !u!65 &1138576240209560627
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -155,7 +147,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3896753813878904455}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: dc1b30bd109f57b47b30929563b59ea1, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -167,8 +159,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.1, y: 0.6972145, z: 0.044356517}
-  m_Center: {x: -0.0030634347, y: 0.10115935, z: 0.004833426}
+  m_Size: {x: 0.099999994, y: 0.6972145, z: 0.26889664}
+  m_Center: {x: -0.003063433, y: 0.101159334, z: -0.009437021}
 --- !u!114 &8019261874480055026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,3 +173,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de9349acf0fb161449684540d9398f71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyDamageAmount: 15
+  playerDamageAmount: 10

@@ -6009,7 +6009,7 @@ MonoBehaviour:
   enemySpecificStiffness: 220
   enemySpecificDamping: 50
   moveDirection: {x: 0, y: 0, z: 0}
-  damageInvulnerabilityTime: 0.5
+  damageInvulnerabilityTime: 0.1
 --- !u!1 &6453713175337084078
 GameObject:
   m_ObjectHideFlags: 0
