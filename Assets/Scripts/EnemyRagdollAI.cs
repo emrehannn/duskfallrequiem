@@ -10,18 +10,14 @@ public class EnemyRagdollAI : MonoBehaviour
 
     public int enemyIndex;
 
-    [Header("Height Settings")]
-    [SerializeField] private float minHeightThreshold = 0.5f;
-    [SerializeField] private float heightCorrectionForce = 20f;
+
     [SerializeField] private LayerMask groundLayer;
 
     [Header("References")]
     [SerializeField] private Rigidbody hipBone;
     [SerializeField] private Rigidbody backBone;
     [SerializeField] private Rigidbody headBone;
-    [Header("Spring Settings")]
-    [SerializeField] private float enemySpecificStiffness = 400f;    
-    [SerializeField] private float enemySpecificDamping = 100f;
+
 
 
 
@@ -30,7 +26,6 @@ private float DeadrotationSpeed = 2f;  // Add this at the top with your other va
 private float retreatSpeed = 2f;  // Add this too - lower value = slower retreat
 
     public  Vector3 moveDirection;
-    private float currentGroundDistance;
     private bool isMoving;
     private Vector3 playerDeathPosition;
     private float health;
@@ -139,21 +134,7 @@ private void Die()
         if (hipBone != null)
         {
             hipBone.constraints = RigidbodyConstraints.FreezeRotation;
-            hipBone.mass = 3f;
-            hipBone.linearDamping = 0.01f;
-            hipBone.interpolation = RigidbodyInterpolation.Interpolate;
-        }
 
-        if (backBone != null)
-        {
-            backBone.useGravity = true;
-            backBone.mass = 1f;
-        }
-
-        if (headBone != null)
-        {
-            headBone.useGravity = true;
-            headBone.mass = 1f;
         }
     }
 
@@ -268,31 +249,10 @@ private void ChasePlayer()
 
     private void FixedUpdate()
     {
-
-        CheckGroundDistance();
         MoveCharacter();
     }
 
-    private void CheckGroundDistance()
-{
-    if (hipBone == null) return;
 
-    RaycastHit hit;
-    bool isGrounded = Physics.Raycast(hipBone.position, Vector3.down, out hit, 10f, groundLayer);
-
-    if (isGrounded)
-    {
-        currentGroundDistance = hit.distance;
-        float heightError = minHeightThreshold - currentGroundDistance;
-        float verticalVelocity = hipBone.linearVelocity.y;
-
-        // Fetch the force using this enemy's specific values
-        float totalCorrectionForce = SpringLookupTable.Instance.GetSpringForce(heightError, verticalVelocity, enemySpecificStiffness, enemySpecificDamping);
-
-        // Apply force
-        hipBone.AddForce(Vector3.up * totalCorrectionForce, ForceMode.Acceleration);
-    }
-}
 
 
 

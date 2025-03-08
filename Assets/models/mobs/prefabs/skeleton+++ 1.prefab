@@ -5993,21 +5993,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e97e63dd701023e49a488b722737bc9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 3.5
-  acceleration: 100
+  maxSpeed: 15
+  acceleration: 1000000
   rotationSpeed: 20
   retreatDistance: 50
   enemyIndex: 0
-  minHeightThreshold: 3.7
-  heightCorrectionForce: 50
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   hipBone: {fileID: 6934990527567091158}
   backBone: {fileID: 4054549035014869539}
   headBone: {fileID: 5985918002717034803}
-  enemySpecificStiffness: 220
-  enemySpecificDamping: 50
   moveDirection: {x: 0, y: 0, z: 0}
   damageInvulnerabilityTime: 0.1
 --- !u!1 &6453713175337084078
