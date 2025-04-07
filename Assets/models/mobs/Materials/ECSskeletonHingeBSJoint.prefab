@@ -1,0 +1,2232 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2390151629415486035
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.47
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.81
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.51
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      propertyPath: m_Name
+      value: ECSskeletonHingeBSJoint
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -4819223349682164798, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8499446134854029291}
+    - targetCorrespondingSourceObject: {fileID: -4819223349682164798, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3968209556013186724}
+    - targetCorrespondingSourceObject: {fileID: 3023449398582191097, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4198767596062460833}
+    - targetCorrespondingSourceObject: {fileID: 3023449398582191097, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7048200049405710897}
+    - targetCorrespondingSourceObject: {fileID: 3023449398582191097, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 632684872952453488}
+    - targetCorrespondingSourceObject: {fileID: 6271679252650280177, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 421779493833007399}
+    - targetCorrespondingSourceObject: {fileID: 6271679252650280177, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5388112791112305854}
+    - targetCorrespondingSourceObject: {fileID: 6271679252650280177, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7872694811585009262}
+    - targetCorrespondingSourceObject: {fileID: 4647315095397632217, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2726015968177910046}
+    - targetCorrespondingSourceObject: {fileID: 4647315095397632217, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1187013329744554546}
+    - targetCorrespondingSourceObject: {fileID: 4647315095397632217, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1498649353734920099}
+    - targetCorrespondingSourceObject: {fileID: -1556703937869492031, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4337083820402979518}
+    - targetCorrespondingSourceObject: {fileID: -1556703937869492031, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 274495430242319472}
+    - targetCorrespondingSourceObject: {fileID: -1556703937869492031, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 853060849910959828}
+    - targetCorrespondingSourceObject: {fileID: -2564969351889351749, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2800352521431991598}
+    - targetCorrespondingSourceObject: {fileID: -2564969351889351749, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2805243816384658570}
+    - targetCorrespondingSourceObject: {fileID: -2564969351889351749, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2244336487876075866}
+    - targetCorrespondingSourceObject: {fileID: -5148169567547449984, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8150506906720426692}
+    - targetCorrespondingSourceObject: {fileID: -5148169567547449984, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7601130455609007793}
+    - targetCorrespondingSourceObject: {fileID: -5148169567547449984, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7755965973889574975}
+    - targetCorrespondingSourceObject: {fileID: -7393073437422913237, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6247133713588936328}
+    - targetCorrespondingSourceObject: {fileID: -7393073437422913237, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4359077162333995361}
+    - targetCorrespondingSourceObject: {fileID: -7393073437422913237, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3828440185644315554}
+    - targetCorrespondingSourceObject: {fileID: 4670195706001285526, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7706254471440404037}
+    - targetCorrespondingSourceObject: {fileID: 4670195706001285526, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1712264343418576317}
+    - targetCorrespondingSourceObject: {fileID: 4670195706001285526, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6155571030919011699}
+  m_SourcePrefab: {fileID: 100100000, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+--- !u!1 &639217628090315178 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3023449398582191097, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+  m_PrefabInstance: {fileID: 2390151629415486035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4198767596062460833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639217628090315178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccea9ea98e38942e0b0938c27ed1903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MotionType: 0
+  m_Smoothing: 0
+  m_Mass: 10
+  m_LinearDamping: 0.01
+  m_AngularDamping: 0.05
+  m_InitialLinearVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_InitialAngularVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_GravityFactor: 1
+  m_OverrideDefaultMassDistribution: 0
+  m_CenterOfMass:
+    x: 0
+    y: 0
+    z: 0
+  m_Orientation:
+    Value:
+      x: 0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_InertiaTensor:
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  m_WorldIndex: 0
+  m_CustomTags:
+    Tag00: 0
+    Tag01: 0
+    Tag02: 0
+    Tag03: 0
+    Tag04: 0
+    Tag05: 0
+    Tag06: 0
+    Tag07: 0
+--- !u!114 &7048200049405710897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639217628090315178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShapeType: 1
+  m_PrimitiveCenter:
+    x: -0.0017103988
+    y: 0.0000013042591
+    z: -0.000000013766112
+  m_PrimitiveSize:
+    x: 0.0006256305
+    y: 0.0006256305
+    z: 0.0035301452
+  m_PrimitiveOrientation:
+    Value:
+      x: -0
+      y: 90
+      z: 90
+    RotationOrder: 4
+  m_Capsule:
+    Height: 0.0035301452
+    Radius: 0.00031281525
+    Axis: 2
+  m_Cylinder:
+    Height: 0.0035301452
+    Radius: 0.00031281525
+    Axis: 2
+  m_CylinderSideCount: 20
+  m_SphereRadius: 0.0017650726
+  m_MinimumSkinnedVertexWeight: 0.1
+  m_ConvexHullGenerationParameters:
+    m_SimplificationTolerance: 0.01
+    m_BevelRadius: 0.05
+    m_MinimumAngle: 2.5000002
+  m_CustomMesh: {fileID: 0}
+  m_ForceUnique: 0
+  m_Material:
+    m_SupportsTemplate: 1
+    m_Template: {fileID: 0}
+    m_CollisionResponse:
+      m_Override: 0
+      m_Value: 0
+    m_Friction:
+      m_Override: 0
+      m_Value:
+        Value: 0.5
+        CombineMode: 0
+    m_Restitution:
+      m_Override: 0
+      m_Value:
+        Value: 0
+        CombineMode: 2
+    m_BelongsToCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CollidesWithCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CustomMaterialTags:
+      m_Override: 0
+      m_Value:
+        Tag00: 0
+        Tag01: 0
+        Tag02: 0
+        Tag03: 0
+        Tag04: 0
+        Tag05: 0
+        Tag06: 0
+        Tag07: 0
+    m_SerializedVersion: 1
+  m_SerializedVersion: 1
+--- !u!114 &632684872952453488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 639217628090315178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a669fa0e32f734c9d34661ccdfd58d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConnectedBody: {fileID: 8499446134854029291}
+  EnableCollision: 0
+  MaxImpulse:
+    x: Infinity
+    y: Infinity
+    z: Infinity
+  EditPivots: 0
+  AutoSetConnected: 1
+  PositionLocal:
+    x: 0
+    y: 0
+    z: 0
+  PositionInConnectedEntity:
+    x: -0.15129948
+    y: -0.0001296997
+    z: 0.029154778
+--- !u!1 &1848025281310887891 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5148169567547449984, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+  m_PrefabInstance: {fileID: 2390151629415486035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8150506906720426692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848025281310887891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccea9ea98e38942e0b0938c27ed1903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MotionType: 0
+  m_Smoothing: 0
+  m_Mass: 10
+  m_LinearDamping: 0.01
+  m_AngularDamping: 0.05
+  m_InitialLinearVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_InitialAngularVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_GravityFactor: 1
+  m_OverrideDefaultMassDistribution: 0
+  m_CenterOfMass:
+    x: 0
+    y: 0
+    z: 0
+  m_Orientation:
+    Value:
+      x: 0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_InertiaTensor:
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  m_WorldIndex: 0
+  m_CustomTags:
+    Tag00: 0
+    Tag01: 0
+    Tag02: 0
+    Tag03: 0
+    Tag04: 0
+    Tag05: 0
+    Tag06: 0
+    Tag07: 0
+--- !u!114 &7601130455609007793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848025281310887891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShapeType: 0
+  m_PrimitiveCenter:
+    x: 0.0025009166
+    y: -0.0000766381
+    z: -0.000000013795216
+  m_PrimitiveSize:
+    x: 0.0051059425
+    y: 0.00084246305
+    z: 0.0004913927
+  m_PrimitiveOrientation:
+    Value:
+      x: -0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_Capsule:
+    Height: 0.0051059425
+    Radius: 0.00042123153
+    Axis: 0
+  m_Cylinder:
+    Height: 0.0051059425
+    Radius: 0.00042123153
+    Axis: 0
+  m_CylinderSideCount: 20
+  m_SphereRadius: 0.0025529712
+  m_MinimumSkinnedVertexWeight: 0.1
+  m_ConvexHullGenerationParameters:
+    m_SimplificationTolerance: 0.01
+    m_BevelRadius: 0.05
+    m_MinimumAngle: 2.5000002
+  m_CustomMesh: {fileID: 0}
+  m_ForceUnique: 0
+  m_Material:
+    m_SupportsTemplate: 1
+    m_Template: {fileID: 0}
+    m_CollisionResponse:
+      m_Override: 0
+      m_Value: 0
+    m_Friction:
+      m_Override: 0
+      m_Value:
+        Value: 0.5
+        CombineMode: 0
+    m_Restitution:
+      m_Override: 0
+      m_Value:
+        Value: 0
+        CombineMode: 2
+    m_BelongsToCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CollidesWithCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CustomMaterialTags:
+      m_Override: 0
+      m_Value:
+        Tag00: 0
+        Tag01: 0
+        Tag02: 0
+        Tag03: 0
+        Tag04: 0
+        Tag05: 0
+        Tag06: 0
+        Tag07: 0
+    m_SerializedVersion: 1
+  m_SerializedVersion: 1
+--- !u!114 &7755965973889574975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848025281310887891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaf9813ee7af2f41a5fd776598ab5b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConnectedBody: {fileID: 2800352521431991598}
+  EnableCollision: 0
+  MaxImpulse:
+    x: Infinity
+    y: Infinity
+    z: Infinity
+  EditPivots: 1
+  AutoSetConnected: 1
+  PositionLocal:
+    x: 0
+    y: 0
+    z: 0
+  PositionInConnectedEntity:
+    x: 0.34643173
+    y: 0.0001296997
+    z: -0.0000009536743
+  EditAxes: 0
+  HingeAxisLocal:
+    x: 1
+    y: 0
+    z: 1
+  HingeAxisInConnectedEntity:
+    x: 1
+    y: 0
+    z: 1
+  EditLimits: 1
+  PerpendicularAxisLocal:
+    x: 1
+    y: 0
+    z: 0
+  PerpendicularAxisInConnectedEntity:
+    x: 1
+    y: 0
+    z: 0
+  MinAngle: -90
+  MaxAngle: 90
+--- !u!1 &2032579030087940497 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4819223349682164798, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+  m_PrefabInstance: {fileID: 2390151629415486035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8499446134854029291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032579030087940497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccea9ea98e38942e0b0938c27ed1903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MotionType: 0
+  m_Smoothing: 0
+  m_Mass: 25
+  m_LinearDamping: 0.01
+  m_AngularDamping: 0.05
+  m_InitialLinearVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_InitialAngularVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_GravityFactor: 1
+  m_OverrideDefaultMassDistribution: 1
+  m_CenterOfMass:
+    x: 0
+    y: 0
+    z: 0
+  m_Orientation:
+    Value:
+      x: 0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_InertiaTensor:
+    x: Infinity
+    y: 0.4
+    z: Infinity
+  m_WorldIndex: 0
+  m_CustomTags:
+    Tag00: 0
+    Tag01: 0
+    Tag02: 0
+    Tag03: 0
+    Tag04: 0
+    Tag05: 0
+    Tag06: 0
+    Tag07: 0
+--- !u!114 &3968209556013186724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032579030087940497}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShapeType: 0
+  m_PrimitiveCenter:
+    x: 0
+    y: -0.00022797682
+    z: -0.0011352254
+  m_PrimitiveSize:
+    x: 0.0025304765
+    y: 0.0024409764
+    z: 0.008830604
+  m_PrimitiveOrientation:
+    Value:
+      x: -0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_Capsule:
+    Height: 0.008830604
+    Radius: 0.0012652383
+    Axis: 2
+  m_Cylinder:
+    Height: 0.008830604
+    Radius: 0.0012652383
+    Axis: 2
+  m_CylinderSideCount: 20
+  m_SphereRadius: 0.004415302
+  m_MinimumSkinnedVertexWeight: 0.1
+  m_ConvexHullGenerationParameters:
+    m_SimplificationTolerance: 0.01
+    m_BevelRadius: 0.05
+    m_MinimumAngle: 2.5000002
+  m_CustomMesh: {fileID: 0}
+  m_ForceUnique: 0
+  m_Material:
+    m_SupportsTemplate: 1
+    m_Template: {fileID: 0}
+    m_CollisionResponse:
+      m_Override: 0
+      m_Value: 0
+    m_Friction:
+      m_Override: 0
+      m_Value:
+        Value: 0.5
+        CombineMode: 0
+    m_Restitution:
+      m_Override: 0
+      m_Value:
+        Value: 0
+        CombineMode: 2
+    m_BelongsToCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CollidesWithCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CustomMaterialTags:
+      m_Override: 0
+      m_Value:
+        Tag00: 0
+        Tag01: 0
+        Tag02: 0
+        Tag03: 0
+        Tag04: 0
+        Tag05: 0
+        Tag06: 0
+        Tag07: 0
+    m_SerializedVersion: 1
+  m_SerializedVersion: 1
+--- !u!1 &4056899795810675576 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7393073437422913237, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+  m_PrefabInstance: {fileID: 2390151629415486035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6247133713588936328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4056899795810675576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccea9ea98e38942e0b0938c27ed1903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MotionType: 0
+  m_Smoothing: 0
+  m_Mass: 10
+  m_LinearDamping: 0.01
+  m_AngularDamping: 0.05
+  m_InitialLinearVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_InitialAngularVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_GravityFactor: 1
+  m_OverrideDefaultMassDistribution: 0
+  m_CenterOfMass:
+    x: 0
+    y: 0
+    z: 0
+  m_Orientation:
+    Value:
+      x: 0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_InertiaTensor:
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  m_WorldIndex: 0
+  m_CustomTags:
+    Tag00: 0
+    Tag01: 0
+    Tag02: 0
+    Tag03: 0
+    Tag04: 0
+    Tag05: 0
+    Tag06: 0
+    Tag07: 0
+--- !u!114 &4359077162333995361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4056899795810675576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShapeType: 1
+  m_PrimitiveCenter:
+    x: 0.00040483417
+    y: 0.000000014522811
+    z: -0.00215028
+  m_PrimitiveSize:
+    x: 0.0010489869
+    y: 0.0010489869
+    z: 0.0047611827
+  m_PrimitiveOrientation:
+    Value:
+      x: -0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_Capsule:
+    Height: 0.0047611827
+    Radius: 0.00052449346
+    Axis: 2
+  m_Cylinder:
+    Height: 0.0047611827
+    Radius: 0.00052449346
+    Axis: 2
+  m_CylinderSideCount: 20
+  m_SphereRadius: 0.0023805914
+  m_MinimumSkinnedVertexWeight: 0.1
+  m_ConvexHullGenerationParameters:
+    m_SimplificationTolerance: 0.01
+    m_BevelRadius: 0.05
+    m_MinimumAngle: 2.5000002
+  m_CustomMesh: {fileID: 0}
+  m_ForceUnique: 0
+  m_Material:
+    m_SupportsTemplate: 1
+    m_Template: {fileID: 0}
+    m_CollisionResponse:
+      m_Override: 0
+      m_Value: 0
+    m_Friction:
+      m_Override: 0
+      m_Value:
+        Value: 0.5
+        CombineMode: 0
+    m_Restitution:
+      m_Override: 0
+      m_Value:
+        Value: 0
+        CombineMode: 2
+    m_BelongsToCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CollidesWithCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CustomMaterialTags:
+      m_Override: 0
+      m_Value:
+        Tag00: 0
+        Tag01: 0
+        Tag02: 0
+        Tag03: 0
+        Tag04: 0
+        Tag05: 0
+        Tag06: 0
+        Tag07: 0
+    m_SerializedVersion: 1
+  m_SerializedVersion: 1
+--- !u!114 &3828440185644315554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4056899795810675576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a669fa0e32f734c9d34661ccdfd58d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConnectedBody: {fileID: 8499446134854029291}
+  EnableCollision: 0
+  MaxImpulse:
+    x: Infinity
+    y: Infinity
+    z: Infinity
+  EditPivots: 0
+  AutoSetConnected: 1
+  PositionLocal:
+    x: 0
+    y: 0
+    z: 0
+  PositionInConnectedEntity:
+    x: 0.090613365
+    y: -0.0000019073486
+    z: -0.580245
+--- !u!1 &5426551928751899282 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1556703937869492031, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+  m_PrefabInstance: {fileID: 2390151629415486035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4337083820402979518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426551928751899282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccea9ea98e38942e0b0938c27ed1903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MotionType: 0
+  m_Smoothing: 0
+  m_Mass: 10
+  m_LinearDamping: 0.01
+  m_AngularDamping: 0.05
+  m_InitialLinearVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_InitialAngularVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_GravityFactor: 1
+  m_OverrideDefaultMassDistribution: 0
+  m_CenterOfMass:
+    x: 0
+    y: 0
+    z: 0
+  m_Orientation:
+    Value:
+      x: 0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_InertiaTensor:
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  m_WorldIndex: 0
+  m_CustomTags:
+    Tag00: 0
+    Tag01: 0
+    Tag02: 0
+    Tag03: 0
+    Tag04: 0
+    Tag05: 0
+    Tag06: 0
+    Tag07: 0
+--- !u!114 &274495430242319472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426551928751899282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShapeType: 0
+  m_PrimitiveCenter:
+    x: -0.000014754682
+    y: -0.00073632156
+    z: -0.0027632196
+  m_PrimitiveSize:
+    x: 0.00084135705
+    y: 0.002236363
+    z: 0.0056131855
+  m_PrimitiveOrientation:
+    Value:
+      x: -0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_Capsule:
+    Height: 0.0056131855
+    Radius: 0.0011181815
+    Axis: 2
+  m_Cylinder:
+    Height: 0.0056131855
+    Radius: 0.0011181815
+    Axis: 2
+  m_CylinderSideCount: 20
+  m_SphereRadius: 0.0028065927
+  m_MinimumSkinnedVertexWeight: 0.1
+  m_ConvexHullGenerationParameters:
+    m_SimplificationTolerance: 0.01
+    m_BevelRadius: 0.05
+    m_MinimumAngle: 2.5000002
+  m_CustomMesh: {fileID: 0}
+  m_ForceUnique: 0
+  m_Material:
+    m_SupportsTemplate: 1
+    m_Template: {fileID: 0}
+    m_CollisionResponse:
+      m_Override: 0
+      m_Value: 0
+    m_Friction:
+      m_Override: 0
+      m_Value:
+        Value: 0.5
+        CombineMode: 0
+    m_Restitution:
+      m_Override: 0
+      m_Value:
+        Value: 0
+        CombineMode: 2
+    m_BelongsToCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CollidesWithCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CustomMaterialTags:
+      m_Override: 0
+      m_Value:
+        Tag00: 0
+        Tag01: 0
+        Tag02: 0
+        Tag03: 0
+        Tag04: 0
+        Tag05: 0
+        Tag06: 0
+        Tag07: 0
+    m_SerializedVersion: 1
+  m_SerializedVersion: 1
+--- !u!114 &853060849910959828
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426551928751899282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaf9813ee7af2f41a5fd776598ab5b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConnectedBody: {fileID: 2726015968177910046}
+  EnableCollision: 0
+  MaxImpulse:
+    x: Infinity
+    y: Infinity
+    z: Infinity
+  EditPivots: 0
+  AutoSetConnected: 1
+  PositionLocal:
+    x: 0
+    y: 0
+    z: 0
+  PositionInConnectedEntity:
+    x: -0.046686172
+    y: 0.00025558472
+    z: -0.44516182
+  EditAxes: 0
+  HingeAxisLocal:
+    x: 0
+    y: 0
+    z: 0
+  HingeAxisInConnectedEntity:
+    x: 0
+    y: 0
+    z: 0
+  EditLimits: 0
+  PerpendicularAxisLocal:
+    x: 0
+    y: 0
+    z: 0
+  PerpendicularAxisInConnectedEntity:
+    x: 0
+    y: 0
+    z: 0
+  MinAngle: 0
+  MaxAngle: 90
+--- !u!1 &7013532106468694666 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4647315095397632217, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+  m_PrefabInstance: {fileID: 2390151629415486035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2726015968177910046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013532106468694666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccea9ea98e38942e0b0938c27ed1903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MotionType: 0
+  m_Smoothing: 0
+  m_Mass: 10
+  m_LinearDamping: 0.01
+  m_AngularDamping: 0.05
+  m_InitialLinearVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_InitialAngularVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_GravityFactor: 1
+  m_OverrideDefaultMassDistribution: 0
+  m_CenterOfMass:
+    x: 0
+    y: 0
+    z: 0
+  m_Orientation:
+    Value:
+      x: 0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_InertiaTensor:
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  m_WorldIndex: 0
+  m_CustomTags:
+    Tag00: 0
+    Tag01: 0
+    Tag02: 0
+    Tag03: 0
+    Tag04: 0
+    Tag05: 0
+    Tag06: 0
+    Tag07: 0
+--- !u!114 &1187013329744554546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013532106468694666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShapeType: 1
+  m_PrimitiveCenter:
+    x: -0.00040477462
+    y: 0.000000014522811
+    z: -0.00215028
+  m_PrimitiveSize:
+    x: 0.001048987
+    y: 0.001048987
+    z: 0.0047611827
+  m_PrimitiveOrientation:
+    Value:
+      x: -0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_Capsule:
+    Height: 0.0047611827
+    Radius: 0.0005244935
+    Axis: 2
+  m_Cylinder:
+    Height: 0.0047611827
+    Radius: 0.0005244935
+    Axis: 2
+  m_CylinderSideCount: 20
+  m_SphereRadius: 0.0023805914
+  m_MinimumSkinnedVertexWeight: 0.1
+  m_ConvexHullGenerationParameters:
+    m_SimplificationTolerance: 0.01
+    m_BevelRadius: 0.05
+    m_MinimumAngle: 2.5000002
+  m_CustomMesh: {fileID: 0}
+  m_ForceUnique: 0
+  m_Material:
+    m_SupportsTemplate: 1
+    m_Template: {fileID: 0}
+    m_CollisionResponse:
+      m_Override: 0
+      m_Value: 0
+    m_Friction:
+      m_Override: 0
+      m_Value:
+        Value: 0.5
+        CombineMode: 0
+    m_Restitution:
+      m_Override: 0
+      m_Value:
+        Value: 0
+        CombineMode: 2
+    m_BelongsToCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CollidesWithCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CustomMaterialTags:
+      m_Override: 0
+      m_Value:
+        Tag00: 0
+        Tag01: 0
+        Tag02: 0
+        Tag03: 0
+        Tag04: 0
+        Tag05: 0
+        Tag06: 0
+        Tag07: 0
+    m_SerializedVersion: 1
+  m_SerializedVersion: 1
+--- !u!114 &1498649353734920099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7013532106468694666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a669fa0e32f734c9d34661ccdfd58d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConnectedBody: {fileID: 8499446134854029291}
+  EnableCollision: 0
+  MaxImpulse:
+    x: Infinity
+    y: Infinity
+    z: Infinity
+  EditPivots: 0
+  AutoSetConnected: 1
+  PositionLocal:
+    x: 0
+    y: 0
+    z: 0
+  PositionInConnectedEntity:
+    x: -0.090613365
+    y: -0.0000019073486
+    z: -0.580245
+--- !u!1 &7053860216594723781 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4670195706001285526, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+  m_PrefabInstance: {fileID: 2390151629415486035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7706254471440404037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7053860216594723781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccea9ea98e38942e0b0938c27ed1903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MotionType: 0
+  m_Smoothing: 0
+  m_Mass: 10
+  m_LinearDamping: 0.01
+  m_AngularDamping: 0.05
+  m_InitialLinearVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_InitialAngularVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_GravityFactor: 1
+  m_OverrideDefaultMassDistribution: 0
+  m_CenterOfMass:
+    x: 0
+    y: 0
+    z: 0
+  m_Orientation:
+    Value:
+      x: 0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_InertiaTensor:
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  m_WorldIndex: 0
+  m_CustomTags:
+    Tag00: 0
+    Tag01: 0
+    Tag02: 0
+    Tag03: 0
+    Tag04: 0
+    Tag05: 0
+    Tag06: 0
+    Tag07: 0
+--- !u!114 &1712264343418576317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7053860216594723781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShapeType: 0
+  m_PrimitiveCenter:
+    x: 0.000014814315
+    y: -0.00073632156
+    z: -0.0027632196
+  m_PrimitiveSize:
+    x: 0.00084135705
+    y: 0.002236363
+    z: 0.0056131855
+  m_PrimitiveOrientation:
+    Value:
+      x: -0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_Capsule:
+    Height: 0.0056131855
+    Radius: 0.0011181815
+    Axis: 2
+  m_Cylinder:
+    Height: 0.0056131855
+    Radius: 0.0011181815
+    Axis: 2
+  m_CylinderSideCount: 20
+  m_SphereRadius: 0.0028065927
+  m_MinimumSkinnedVertexWeight: 0.1
+  m_ConvexHullGenerationParameters:
+    m_SimplificationTolerance: 0.01
+    m_BevelRadius: 0.042067852
+    m_MinimumAngle: 2.5000002
+  m_CustomMesh: {fileID: 0}
+  m_ForceUnique: 0
+  m_Material:
+    m_SupportsTemplate: 1
+    m_Template: {fileID: 0}
+    m_CollisionResponse:
+      m_Override: 0
+      m_Value: 0
+    m_Friction:
+      m_Override: 0
+      m_Value:
+        Value: 0.5
+        CombineMode: 0
+    m_Restitution:
+      m_Override: 0
+      m_Value:
+        Value: 0
+        CombineMode: 2
+    m_BelongsToCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CollidesWithCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CustomMaterialTags:
+      m_Override: 0
+      m_Value:
+        Tag00: 0
+        Tag01: 0
+        Tag02: 0
+        Tag03: 0
+        Tag04: 0
+        Tag05: 0
+        Tag06: 0
+        Tag07: 0
+    m_SerializedVersion: 1
+  m_SerializedVersion: 1
+--- !u!114 &6155571030919011699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7053860216594723781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaf9813ee7af2f41a5fd776598ab5b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConnectedBody: {fileID: 6247133713588936328}
+  EnableCollision: 0
+  MaxImpulse:
+    x: Infinity
+    y: Infinity
+    z: Infinity
+  EditPivots: 0
+  AutoSetConnected: 1
+  PositionLocal:
+    x: 0
+    y: 0
+    z: 0
+  PositionInConnectedEntity:
+    x: 0.046686172
+    y: 0.00025558472
+    z: -0.44516182
+  EditAxes: 0
+  HingeAxisLocal:
+    x: 0
+    y: 0
+    z: 0
+  HingeAxisInConnectedEntity:
+    x: 0
+    y: 0
+    z: 0
+  EditLimits: 0
+  PerpendicularAxisLocal:
+    x: 0
+    y: 0
+    z: 0
+  PerpendicularAxisInConnectedEntity:
+    x: 0
+    y: 0
+    z: 0
+  MinAngle: 0
+  MaxAngle: 90
+--- !u!1 &8512644642809435810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6271679252650280177, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+  m_PrefabInstance: {fileID: 2390151629415486035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &421779493833007399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8512644642809435810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccea9ea98e38942e0b0938c27ed1903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MotionType: 0
+  m_Smoothing: 0
+  m_Mass: 10
+  m_LinearDamping: 0.01
+  m_AngularDamping: 0.05
+  m_InitialLinearVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_InitialAngularVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_GravityFactor: 1
+  m_OverrideDefaultMassDistribution: 0
+  m_CenterOfMass:
+    x: 0
+    y: 0
+    z: 0
+  m_Orientation:
+    Value:
+      x: 0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_InertiaTensor:
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  m_WorldIndex: 0
+  m_CustomTags:
+    Tag00: 0
+    Tag01: 0
+    Tag02: 0
+    Tag03: 0
+    Tag04: 0
+    Tag05: 0
+    Tag06: 0
+    Tag07: 0
+--- !u!114 &5388112791112305854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8512644642809435810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShapeType: 0
+  m_PrimitiveCenter:
+    x: -0.002500857
+    y: -0.00007663807
+    z: -0.000000013795216
+  m_PrimitiveSize:
+    x: 0.005105943
+    y: 0.0008424631
+    z: 0.0004913927
+  m_PrimitiveOrientation:
+    Value:
+      x: -0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_Capsule:
+    Height: 0.005105943
+    Radius: 0.00042123155
+    Axis: 0
+  m_Cylinder:
+    Height: 0.005105943
+    Radius: 0.00042123155
+    Axis: 0
+  m_CylinderSideCount: 20
+  m_SphereRadius: 0.0025529715
+  m_MinimumSkinnedVertexWeight: 0.1
+  m_ConvexHullGenerationParameters:
+    m_SimplificationTolerance: 0.01
+    m_BevelRadius: 0.05
+    m_MinimumAngle: 2.5000002
+  m_CustomMesh: {fileID: 0}
+  m_ForceUnique: 0
+  m_Material:
+    m_SupportsTemplate: 1
+    m_Template: {fileID: 0}
+    m_CollisionResponse:
+      m_Override: 0
+      m_Value: 0
+    m_Friction:
+      m_Override: 0
+      m_Value:
+        Value: 0.5
+        CombineMode: 0
+    m_Restitution:
+      m_Override: 0
+      m_Value:
+        Value: 0
+        CombineMode: 2
+    m_BelongsToCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CollidesWithCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CustomMaterialTags:
+      m_Override: 0
+      m_Value:
+        Tag00: 0
+        Tag01: 0
+        Tag02: 0
+        Tag03: 0
+        Tag04: 0
+        Tag05: 0
+        Tag06: 0
+        Tag07: 0
+    m_SerializedVersion: 1
+  m_SerializedVersion: 1
+--- !u!114 &7872694811585009262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8512644642809435810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbaf9813ee7af2f41a5fd776598ab5b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConnectedBody: {fileID: 4198767596062460833}
+  EnableCollision: 0
+  MaxImpulse:
+    x: Infinity
+    y: Infinity
+    z: Infinity
+  EditPivots: 0
+  AutoSetConnected: 1
+  PositionLocal:
+    x: 0
+    y: 0
+    z: 0
+  PositionInConnectedEntity:
+    x: -0.34643173
+    y: 0.0001296997
+    z: -0.0000009536743
+  EditAxes: 0
+  HingeAxisLocal:
+    x: 0
+    y: 0
+    z: 1
+  HingeAxisInConnectedEntity:
+    x: 0
+    y: 0
+    z: 1
+  EditLimits: 0
+  PerpendicularAxisLocal:
+    x: 0
+    y: 1
+    z: 0
+  PerpendicularAxisInConnectedEntity:
+    x: 0
+    y: 1
+    z: 0
+  MinAngle: -90
+  MaxAngle: 90
+--- !u!1 &9028841803628845544 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -2564969351889351749, guid: 848bc7ddc7561a4419bf5aff96ac6444, type: 3}
+  m_PrefabInstance: {fileID: 2390151629415486035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2800352521431991598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9028841803628845544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccea9ea98e38942e0b0938c27ed1903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MotionType: 0
+  m_Smoothing: 0
+  m_Mass: 10
+  m_LinearDamping: 0.01
+  m_AngularDamping: 0.05
+  m_InitialLinearVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_InitialAngularVelocity:
+    x: 0
+    y: 0
+    z: 0
+  m_GravityFactor: 1
+  m_OverrideDefaultMassDistribution: 0
+  m_CenterOfMass:
+    x: 0
+    y: 0
+    z: 0
+  m_Orientation:
+    Value:
+      x: 0
+      y: 0
+      z: 0
+    RotationOrder: 4
+  m_InertiaTensor:
+    x: 0.4
+    y: 0.4
+    z: 0.4
+  m_WorldIndex: 0
+  m_CustomTags:
+    Tag00: 0
+    Tag01: 0
+    Tag02: 0
+    Tag03: 0
+    Tag04: 0
+    Tag05: 0
+    Tag06: 0
+    Tag07: 0
+--- !u!114 &2805243816384658570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9028841803628845544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShapeType: 1
+  m_PrimitiveCenter:
+    x: 0.0017104585
+    y: 0.0000013042591
+    z: -0.000000013766112
+  m_PrimitiveSize:
+    x: 0.0006256305
+    y: 0.0006256305
+    z: 0.0035301456
+  m_PrimitiveOrientation:
+    Value:
+      x: -0
+      y: 90
+      z: 90
+    RotationOrder: 4
+  m_Capsule:
+    Height: 0.0035301456
+    Radius: 0.00031281525
+    Axis: 2
+  m_Cylinder:
+    Height: 0.0035301456
+    Radius: 0.00031281525
+    Axis: 2
+  m_CylinderSideCount: 20
+  m_SphereRadius: 0.0017650728
+  m_MinimumSkinnedVertexWeight: 0.1
+  m_ConvexHullGenerationParameters:
+    m_SimplificationTolerance: 0.01
+    m_BevelRadius: 0.05
+    m_MinimumAngle: 2.5000002
+  m_CustomMesh: {fileID: 0}
+  m_ForceUnique: 0
+  m_Material:
+    m_SupportsTemplate: 1
+    m_Template: {fileID: 0}
+    m_CollisionResponse:
+      m_Override: 0
+      m_Value: 0
+    m_Friction:
+      m_Override: 0
+      m_Value:
+        Value: 0.5
+        CombineMode: 0
+    m_Restitution:
+      m_Override: 0
+      m_Value:
+        Value: 0
+        CombineMode: 2
+    m_BelongsToCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CollidesWithCategories:
+      m_Override: 0
+      m_Value:
+        Category00: 1
+        Category01: 1
+        Category02: 1
+        Category03: 1
+        Category04: 1
+        Category05: 1
+        Category06: 1
+        Category07: 1
+        Category08: 1
+        Category09: 1
+        Category10: 1
+        Category11: 1
+        Category12: 1
+        Category13: 1
+        Category14: 1
+        Category15: 1
+        Category16: 1
+        Category17: 1
+        Category18: 1
+        Category19: 1
+        Category20: 1
+        Category21: 1
+        Category22: 1
+        Category23: 1
+        Category24: 1
+        Category25: 1
+        Category26: 1
+        Category27: 1
+        Category28: 1
+        Category29: 1
+        Category30: 1
+        Category31: 1
+    m_CustomMaterialTags:
+      m_Override: 0
+      m_Value:
+        Tag00: 0
+        Tag01: 0
+        Tag02: 0
+        Tag03: 0
+        Tag04: 0
+        Tag05: 0
+        Tag06: 0
+        Tag07: 0
+    m_SerializedVersion: 1
+  m_SerializedVersion: 1
+--- !u!114 &2244336487876075866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9028841803628845544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28a669fa0e32f734c9d34661ccdfd58d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ConnectedBody: {fileID: 8499446134854029291}
+  EnableCollision: 0
+  MaxImpulse:
+    x: Infinity
+    y: Infinity
+    z: Infinity
+  EditPivots: 0
+  AutoSetConnected: 1
+  PositionLocal:
+    x: 0
+    y: 0
+    z: 0
+  PositionInConnectedEntity:
+    x: 0.15129948
+    y: -0.0001296997
+    z: 0.029154778

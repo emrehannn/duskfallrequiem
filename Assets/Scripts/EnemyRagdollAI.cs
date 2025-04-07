@@ -105,10 +105,6 @@ private void Die()
     this.enabled = false;
 
     // Optional: Add force to make the death more dramatic
-    if (hipBone != null)
-    {
-        hipBone.AddForce(Vector3.up * 2f, ForceMode.Impulse);
-    }
 
     LootManager lootManager = FindObjectOfType<LootManager>();
 
